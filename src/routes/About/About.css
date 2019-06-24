@@ -1,0 +1,105 @@
+.about-me-container {
+  max-width: 800px;
+  margin: auto;
+  max-height: 600px;
+    -webkit-animation: fadein 0.2s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 0.2s; /* Firefox < 16 */
+        -ms-animation: fadein 0.2s; /* Internet Explorer */
+         -o-animation: fadein 0.2s; /* Opera < 12.1 */
+            animation: fadein 0.2s;
+}
+
+.about-main {
+  max-height: 600px;
+}
+
+.about-head {
+  font-family: 'Cantarell', sans-serif;
+  position: relative;
+  top: 52px;
+  right: 107px;
+  font-size: 27px;
+
+  margin: 0;
+  z-index: 5;
+}
+
+.about-desc {
+  text-align: left;
+  font-size: 15px;
+  border: 0.5px solid rgb(151, 151, 151);
+  background-color: rgb(18, 18, 20);
+  max-width: 300px;
+  padding: 16px;
+  z-index: 100;
+}
+
+.about-outer-border {
+  border-right: 8px solid rgb(19, 19, 22);
+  border-bottom: 10px solid rgb(19, 19, 22);
+  margin: 60px auto;
+  display: inline-block;
+  position: relative;
+  z-index: 1000;
+}
+
+.about-me-decoration {
+  background:
+    linear-gradient(63deg, #999 23%, transparent 23%) 7px 0,
+    linear-gradient(63deg, transparent 74%, #999 78%),
+    linear-gradient(63deg, transparent 34%, #999 38%, #999 58%, transparent 62%),
+    #444;
+  background-size: 16px 48px;
+
+  width: 332px;
+  min-height: 506px;
+  margin: auto;
+  position: relative;
+  bottom: 349px;
+  left: 35px;
+  z-index: 1;
+  opacity: 0.2;
+}
+
+.about-secondary-dec {
+  background-color: rgb(38, 45, 61);
+  background-image: 
+    repeating-linear-gradient(57deg, transparent, transparent 16px, 
+    rgba(255, 255, 255, 0.5) 0px, 
+    rgba(255,255,255,.5) 32px);
+  
+  width: 200px;
+  min-height: 50px;
+
+  position: relative;
+  bottom: 500px;
+  left: 200px;
+  display: inline-block;
+  z-index: 200
+}
+
+.split-1 {
+  width: 50%;
+  min-height: 600px;
+
+  position: absolute;
+  margin-left: auto;
+}
+
+.split-2 {
+  background-color: rgb(19, 19, 22);
+  width: 70%;
+  min-height: 1000px;
+
+  position: absolute;
+  left: 30%;
+}
+
+@media only screen and (max-width: 700px) {
+  .about-main {
+    max-height: 600px;
+  }
+  .about-me-decoration {
+    width: 290px;
+  }
+}
