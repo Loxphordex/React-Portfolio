@@ -1,0 +1,53 @@
+.miMood-image {
+  width: 180px;
+  float: left;
+  margin: 52px;
+  margin-top: 100px;
+  margin-left: 18px;
+  position: relative;
+  bottom: 44px;
+}
+
+.vl3 {
+  right: 70px;
+  bottom: 20px;
+}
+
+.vl4 {
+  bottom: 20px;
+  border-left: 2px dotted rgb(56, 56, 56)
+}
+
+.miMood-mobile {
+  width: 148px;
+  border-radius: 7px;
+  opacity: 0.8;
+  position: relative;
+  right: 44px;
+  margin-top: 15px;
+}
+
+.miMood-info h2 {
+  display: inline-block;
+  font-size: 42px;
+  margin: 0;
+}
+
+.miMood-purple {
+  color: #8884d8;
+}
+
+.miMood-links {
+  display: inline-block;
+  width: 100px;
+  bottom: 80px;
+  left: 35px;
+}
+
+.miMood-links a {
+  margin-bottom: 10px
+}
+
+.mm-p {
+  left: 98px;
+}

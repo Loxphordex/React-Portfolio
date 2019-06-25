@@ -1,0 +1,43 @@
+.quoter-project-image {
+  width: 300px;
+  float: left;
+  border-radius: 7%;
+  margin: 16px;
+  margin-left: 10px;
+}
+
+.quoter-mobile {
+  width: 148px;
+  border: 0.5px solid rgb(56, 56, 56);
+  border-radius: 7px;
+  margin: 18px;
+  position: relative;
+  right: 44px;
+  opacity: 0.8;
+}
+
+.quoter-title {
+  font-family: Poiret One,cursive;
+  display: block;
+  color: rgb(84, 84, 87);
+  font-size: 66px;
+  font-weight: 400;
+  position: relative;
+  margin: 0;
+}
+
+.vl1 {
+  right: 226px;
+  bottom: 48px;
+}
+
+.v2 {
+    float: right;
+    left: 342px;
+    top: 100px;
+    height: 182px;
+}
+
+.hl1 {
+  width: 300px;
+}

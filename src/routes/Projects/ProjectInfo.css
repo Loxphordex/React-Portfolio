@@ -18,43 +18,24 @@
 }
 
 .project-info .info-background {
+  margin-top: 12px;
+  /* margin-left: 6px; */
   display: block;
   width: 99%;
-  min-height: 300px;
+  min-height: 320px;
   position: relative;
   left: 7px;
 }
 
-.quoter-project-image {
-  width: 300px;
-  float: left;
-  border-radius: 7%;
-  margin: 16px;
-  margin-left: 10px;
-}
-
-.quoter-mobile {
-  width: 148px;
-  border: 0.5px solid rgb(56, 56, 56);
-  border-radius: 7px;
-  margin: 18px;
+.p-container {
+  text-align: left;
+  max-width: 330px;
   position: relative;
-  right: 44px;
-  opacity: 0.8;
-}
-
-.quoter-title {
-  font-family: Poiret One,cursive;
-  display: block;
-  color: rgb(84, 84, 87);
-  font-size: 66px;
-  font-weight: 400;
-  position: relative;
-  margin: 0;
+  left: 56px;
 }
 
 .expanded .project-info {
-  max-height: 300px;
+  max-height: 320px;
 }
 
 .expanded:hover .project {
@@ -65,9 +46,9 @@
   width: 400px;
   float: right;
   position: relative;
-  right: 82px;
+  right: 80px;
   margin-top: 6px;
-  text-align: left;
+  text-align: right;
 }
 
 .vl {
@@ -77,18 +58,6 @@
   display: inline-block;
 }
 
-.vl1 {
-  right: 226px;
-  bottom: 48px;
-}
-
-.v2 {
-    float: right;
-    left: 342px;
-    top: 100px;
-    height: 182px;
-}
-
 .hl {
   border-top: 1px solid rgb(56, 56, 56);
   width: 200px;
@@ -96,8 +65,9 @@
   display: inline-block;
 }
 
-.hl1 {
-  width: 300px;
+.project-links {
+  position: relative;
+  bottom: 17px;
 }
 
 .project-links a {
