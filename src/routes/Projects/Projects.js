@@ -14,7 +14,6 @@ export default class Projects extends React.Component {
 
   toggleProjectInfo(event) {
 
-    console.log(event.target)
 
     const element = document.getElementById(event.target.id)
 
@@ -25,13 +24,11 @@ export default class Projects extends React.Component {
     // Here the class "expanded" is being toggled for each project
     // This displays or colapses the info panel
     if(!isExpanded) {
-      console.log('has not')
       element.setAttribute('class', `project-wrapper expanded`)
       return;
     }
 
     if(isExpanded) {
-      console.log('has')
       element.setAttribute('class', `project-wrapper collapsed`)
       return;
     }

@@ -55,6 +55,7 @@
 
 .projects-list {
   margin: auto;
+  margin-bottom: 60px;
   max-width: 1000px;
   position: relative;
   right: 3px;

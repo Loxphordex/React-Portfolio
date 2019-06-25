@@ -13,7 +13,7 @@ export default class Quoter extends React.Component {
             onClick={(event) => this.props.toggleProjectInfo(event)}>
 
             <div className='project quoter'>
-            <p>QUOTER</p>
+                <p>QUOTER</p>
             </div>
 
             <div className='project-info'>
@@ -31,6 +31,16 @@ export default class Quoter extends React.Component {
                         <p>Discover new authors as well as new perspectives.</p>
                     </div>
                     <div className='project-links quoter-links'>
+
+                        <button className='tech'>T E C H
+                                <div className='tech-info'>
+                                <h3>Front End</h3>
+                                <p>Javascript, React</p>
+    
+                                <h3>Back End</h3>
+                                <p>Express, PostgreSQL</p>
+                            </div>
+                        </button>
                         <a href='https://loxphordex-quoter-client.now.sh/' 
                         target='_blank' rel='noopener noreferrer'>Live App</a>
                         <a href='https://github.com/Loxphordex/silas-capstone-client' 

@@ -41,7 +41,7 @@ export default class MiMood extends React.Component {
               </div>
 
             </div>
-            <div className = 'vl v2' />
+            <div className = 'vl v2 mv2' />
 
           </div>
         </div>

@@ -17,6 +17,7 @@
   left: 3.5px;
 
   cursor: default;
+  width: 100%;
 }
 
 .project-info .info-background {
@@ -91,4 +92,55 @@
 
 .project-links a:hover {
   background-color: rgb(29, 31, 41);
+}
+
+.tech {
+  font-size: 14px;
+  font-weight: 200;
+
+  display: inline-block;
+  text-decoration: none;
+  width: 95px;
+  border: 0.5px solid rgb(56, 56, 56);
+  text-align: center;
+
+  color: rgb(192, 192, 192);
+  background-color: rgb(24, 24, 27);
+
+  transition: all 0.2s;
+  margin-right: 10px;
+
+  position: relative;
+  top: 26px;
+
+  cursor: pointer;
+  outline: none;
+}
+
+.tech:hover {
+  background-color: rgb(29, 31, 41);
+}
+
+.tech:hover .tech-info {
+  display: block;
+}
+
+.tech-info {
+  position: absolute;
+  display: none;
+  color: rgb(29, 31, 41);
+  background-color: rgb(192, 192, 192);
+  border: 1px solid rgb(29, 31, 41);;
+  width: 95px;
+
+  bottom: 20px;
+  right: 0;
+  left: -1px;
+
+  transition: all 0.3s;
+}
+
+.tech-info h3 {
+  margin-bottom: 0px;
+  margin-top: 25px;
 }

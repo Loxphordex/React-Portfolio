@@ -42,6 +42,7 @@
   width: 100px;
   bottom: 80px;
   left: 35px;
+  z-index: 50;
 }
 
 .miMood-links a {
@@ -50,4 +51,8 @@
 
 .mm-p {
   left: 98px;
+}
+
+.mv2 {
+  height: 120px;
 }
