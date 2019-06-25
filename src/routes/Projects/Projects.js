@@ -14,6 +14,8 @@ export default class Projects extends React.Component {
 
   toggleProjectInfo(event) {
 
+    console.log(event.target)
+
     const element = document.getElementById(event.target.id)
 
     if (!element) return;
