@@ -23,6 +23,8 @@
 .main-nav ul li {
   display: inline-block;
   width: 120px;
+  position: relative;
+  right: 8px;
 }
 
 .main-nav ul li a {

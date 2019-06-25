@@ -1,0 +1,122 @@
+.end-project {
+  border-bottom: 0.5px solid rgb(56, 56, 56);
+}
+
+.project-info {
+  overflow-y: hidden;
+  max-height: 0;
+	transition-property: all;
+	transition-duration: 0.8s;
+	transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+
+  border-right: 0.5px solid rgb(56, 56, 56);
+  border-left: 0.5px solid rgb(56, 56, 56);
+  background-color: rgb(19, 19, 22);
+
+  position: relative;
+  left: 3.5px;
+}
+
+.project-info .info-background {
+  display: block;
+  width: 99%;
+  min-height: 300px;
+  position: relative;
+  left: 7px;
+}
+
+.quoter-project-image {
+  width: 300px;
+  float: left;
+  border-radius: 7%;
+  margin: 16px;
+  margin-left: 10px;
+}
+
+.quoter-mobile {
+  width: 148px;
+  border: 0.5px solid rgb(56, 56, 56);
+  border-radius: 7px;
+  margin: 18px;
+  position: relative;
+  right: 44px;
+  opacity: 0.8;
+}
+
+.quoter-title {
+  font-family: Poiret One,cursive;
+  display: block;
+  color: rgb(84, 84, 87);
+  font-size: 66px;
+  font-weight: 400;
+  position: relative;
+  margin: 0;
+}
+
+.expanded .project-info {
+  max-height: 300px;
+}
+
+.expanded:hover .project {
+  cursor: pointer;
+}
+
+.info-container {
+  width: 400px;
+  float: right;
+  position: relative;
+  right: 82px;
+  margin-top: 6px;
+  text-align: left;
+}
+
+.vl {
+  border-left: 1px solid rgb(56, 56, 56);
+  height: 200px;
+  position: relative;
+  display: inline-block;
+}
+
+.vl1 {
+  right: 226px;
+  bottom: 48px;
+}
+
+.v2 {
+    float: right;
+    left: 342px;
+    top: 100px;
+    height: 182px;
+}
+
+.hl {
+  border-top: 1px solid rgb(56, 56, 56);
+  width: 200px;
+  position: relative;
+  display: inline-block;
+}
+
+.hl1 {
+  width: 300px;
+}
+
+.project-links a {
+  display: inline-block;
+  text-decoration: none;
+  width: 95px;
+  min-height: 47px;
+  border: 0.5px solid rgb(56, 56, 56);
+  padding-top: 27px;
+  text-align: center;
+  background-color: rgb(24, 24, 27);
+  transition: all 0.2s;
+  margin-right: 10px;
+}
+
+.project-links a:visited {
+  color: rgb(192, 192, 192);
+}
+
+.project-links a:hover {
+  background-color: rgb(29, 31, 41);
+}

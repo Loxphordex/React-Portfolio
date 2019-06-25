@@ -76,6 +76,10 @@
   transition: all 0.2s;
 }
 
+.collapsed:hover {
+  cursor: pointer;
+}
+
 .project-wrapper:hover .project {
   background-color: rgb(29, 31, 41);
 }
@@ -90,31 +94,4 @@
 .project h2 {
   margin: 0 auto;
   display: inline-block;
-}
-
-.project-info {
-  overflow-y: hidden;
-  max-height: 0;
-	transition-property: all;
-	transition-duration: 0.8s;
-	transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
-
-  border-right: 0.5px solid rgb(56, 56, 56);
-  border-left: 0.5px solid rgb(56, 56, 56);
-  background-color: rgb(19, 19, 22);
-
-  position: relative;
-  left: 3.5px;
-}
-
-.project-info .info-background {
-  display: block;
-  width: 99%;
-  min-height: 300px;
-  position: relative;
-  left: 7px;
-}
-
-.expanded .project-info {
-  max-height: 300px;
 }
