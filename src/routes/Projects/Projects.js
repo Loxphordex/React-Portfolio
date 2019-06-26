@@ -3,6 +3,7 @@ import './Projects.css'
 import './ProjectInfo.css'
 import Quoter from './Quoter/Quoter'
 import MiMood from './MiMood/MiMood'
+import Bookmarks from './Bookmarks/Bookmarks'
 
 export default class Projects extends React.Component {
 
@@ -49,21 +50,7 @@ export default class Projects extends React.Component {
 
             <MiMood toggleProjectInfo={this.toggleProjectInfo} />
 
-
-            <div id='bookmarks' className='project-wrapper collapsed'
-              onClick={(event) => this.toggleProjectInfo(event)}>
-
-              <div className='project bookmarks'>
-                <p>BOOKMARKS</p>
-              </div>
-
-              <div className='project-info end-project'>
-                <div className='info-background'>
-                  
-                </div>
-              </div>
-            </div>
-
+            <Bookmarks toggleProjectInfo={this.toggleProjectInfo} />
           </div>
         </div>
     ) 

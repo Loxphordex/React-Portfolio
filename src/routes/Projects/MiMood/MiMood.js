@@ -21,9 +21,19 @@ export default class MiMood extends React.Component {
             <div  className='vl vl4' />
 
             <div className='project-links miMood-links'>
-              <a href='https://loxphordex-quoter-client.now.sh/' 
+              <button className='tech miMood-tech'>T E C H
+                <div className='tech-info'>
+                  <h3>Front End</h3>
+                  <p>Javascript, React, Recharts</p>
+
+                  <h3>Back End</h3>
+                  <p>Express, PostgreSQL</p>
+
+                </div>
+              </button>
+              <a href='https://alt-states-mimood.now.sh/' 
               target='_blank' rel='noopener noreferrer'>Live App</a>
-              <a href='https://github.com/Loxphordex/silas-capstone-client' 
+              <a href='https://github.com/thinkful-ei-bee/Altered-States-Capstone' 
               target='_blank' rel='noopener noreferrer'>GitHub</a>
             </div>
 
