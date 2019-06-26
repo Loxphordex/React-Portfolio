@@ -41,3 +41,21 @@
 .hl1 {
   width: 300px;
 }
+
+
+
+
+
+@media only screen and (max-width: 768px) {
+  .quoter-project-image {
+    width: 85px;
+  }
+  .quoter-mobile {
+    width: 85px;
+    right: 189px;
+    top: 95px;
+  }
+  .vl1 {
+    display: none;
+  }
+}
