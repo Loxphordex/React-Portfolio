@@ -1,0 +1,8 @@
+@media only screen and (max-width: 768px) {
+  .bookmarks-title {
+    text-align: center;
+  }
+  .bookmarks-links {
+    top: 10px;
+  }
+}
