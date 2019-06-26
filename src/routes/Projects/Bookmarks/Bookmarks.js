@@ -1,5 +1,6 @@
 import React from 'react'
 import mobile from '../../../images/bookmarks-mobile.png'
+import wide from '../../../images/bookmarks-wide.png'
 import './Bookmarks.css'
 
 export default class Bookmarks extends React.Component {
@@ -13,7 +14,10 @@ export default class Bookmarks extends React.Component {
         </div>
         <div className='project-info end-project'>
           <div className='info-background'>
+
             <div className='img-container bookmarks-img-container'>
+              <img src={wide} alt='bookmarks-wide' className='bookmarks-wide' />
+              <div className='vl bm-vl1' />
               <img src={mobile} alt='bookmarks-mobile' className='bookmarks-mobile' />
             </div>
             
