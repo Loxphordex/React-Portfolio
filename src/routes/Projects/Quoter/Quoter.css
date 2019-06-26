@@ -11,8 +11,9 @@
   border: 0.5px solid rgb(56, 56, 56);
   border-radius: 7px;
   margin: 18px;
-  position: relative;
-  right: 44px;
+  /* position: relative;
+  right: 44px; */
+  position: static;
   opacity: 0.8;
 }
 
@@ -27,7 +28,7 @@
 }
 
 .vl1 {
-  right: 226px;
+  /* right: 226px; */
   bottom: 48px;
 }
 
@@ -42,20 +43,31 @@
   width: 300px;
 }
 
-
+.quoter-img-container {
+  right: 30px;
+}
 
 
 
 @media only screen and (max-width: 768px) {
-  .quoter-project-image {
-    width: 85px;
-  }
-  .quoter-mobile {
-    width: 85px;
-    right: 189px;
-    top: 95px;
-  }
-  .vl1 {
+  .quoter-img-container {
     display: none;
+  }
+  .quoter-title {
+    font-size: 42px;
+    text-align: center;
+  }
+  .v2 {
+    left: 0;
+    top: 0;
+    float: initial;
+    height: 295px;
+  }
+  .hl1 {
+    width: 100%;
+  }
+  .quoter-links {
+    bottom: 0;
+    top: 30px;
   }
 }

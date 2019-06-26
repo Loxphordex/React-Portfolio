@@ -145,8 +145,29 @@
   margin-top: 25px;
 }
 
+.img-container {
+  display: inline-block;
+  position: relative;
+}
+
 @media only screen and (max-width: 768px) {
   .info-container {
-    bottom: 194px;
+    margin: auto;
+    width: 99%;
+    right: 0;
+  }
+  .project-info {
+    border-right: none;
+    border-left: none;
+  }
+  .p-container {
+    margin: auto;
+    left: 0;
+  }
+  .project-links {
+    text-align: center;
+  }
+  .img-container {
+    display: none;
   }
 }

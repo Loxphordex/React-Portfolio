@@ -15,10 +15,12 @@ export default class MiMood extends React.Component {
 
         <div className='project-info'>
           <div className='info-background'>
-            <img src={happy} alt='miMood' className='miMood-image' />
-            <div  className='vl vl3' />
-            <img src={miMoodMobile} alt='miMood-mobile' className='miMood-mobile' />
-            <div  className='vl vl4' />
+            <div className='img-container miMood-img-container'>
+              <img src={happy} alt='miMood' className='miMood-image' />
+              <div  className='vl vl3' />
+              <img src={miMoodMobile} alt='miMood-mobile' className='miMood-mobile' />
+              <div  className='vl vl4' />
+            </div>
 
             <div className='project-links miMood-links'>
               <button className='tech miMood-tech'>T E C H

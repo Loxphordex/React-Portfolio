@@ -18,9 +18,11 @@ export default class Quoter extends React.Component {
 
             <div className='project-info'>
                 <div className='info-background'>
-                    <img src={quoterLabel} alt='quoter' className='quoter-project-image' />
-                    <img src={qouterMobile} alt='quoter-mobile' className='quoter-mobile' />
-                    <div  className='vl vl1' />
+                    <div className='img-container quoter-img-container'>
+                        <img src={quoterLabel} alt='quoter' className='quoter-project-image' />
+                        <div  className='vl vl1' />
+                        <img src={qouterMobile} alt='quoter-mobile' className='quoter-mobile' />
+                    </div>
 
                     <div className='info-container'>
                     <h2 className='quoter-title'>Quoter</h2>
