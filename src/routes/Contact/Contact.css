@@ -1,0 +1,61 @@
+.contact-container {
+  width: 100%;
+  min-height: 100vh;
+
+  -webkit-animation: fadein 0.2s; /* Safari, Chrome and Opera > 12.1 */
+     -moz-animation: fadein 0.2s; /* Firefox < 16 */
+      -ms-animation: fadein 0.2s; /* Internet Explorer */
+       -o-animation: fadein 0.2s; /* Opera < 12.1 */
+          animation: fadein 0.2s;
+}
+
+.contact-dec {
+  background:
+    linear-gradient(63deg, #999 23%, transparent 23%) 7px 0,
+    linear-gradient(63deg, transparent 74%, #999 78%),
+    linear-gradient(63deg, transparent 34%, #999 38%, #999 58%, transparent 62%),
+    #444;
+  background-size: 16px 48px;
+
+  width: 100%;
+  min-height: 100vh;
+  margin: 0;
+  position: absolute;
+  bottom: -82px;
+
+  opacity: 0.2;
+  z-index: -100;
+}
+
+.contact-info {
+  width: 350px;
+  min-height: 100px;
+  margin: auto;
+  margin-top: 50px;
+  border: 1px solid rgb(56, 56, 56);
+  background-color: rgb(24, 24, 27);
+  text-align: left;
+  font-size: 16px;
+  padding: 30px;
+  box-sizing: border-box;
+}
+
+.contact-info a, .contact-info p {
+  margin: 6% 0;
+}
+
+.contact-info p {
+  margin: 0;
+  margin-top: 0;
+  text-decoration: underline;
+}
+
+.contact-info a {
+  color: rgb(192, 192, 192);
+  display: block;
+}
+
+
+@media only screen and (max-width: 812px) {
+  
+}

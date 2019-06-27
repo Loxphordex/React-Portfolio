@@ -39,6 +39,8 @@
   top: 44px;
   /* background-color: rgb(19, 19, 22); */
   z-index: 100;
+
+  pointer-events: none;
 }
 
 .pro-dec-1 {
@@ -55,6 +57,7 @@
 
 .projects-list {
   margin: auto;
+  margin-bottom: 60px;
   max-width: 1000px;
   position: relative;
   right: 3px;
@@ -73,7 +76,21 @@
   margin: 0 3px;
   text-align: left;
   pointer-events: none;
+  cursor: pointer;
   transition: all 0.2s;
+
+  -webkit-user-select: none; /* Safari 3.1+ */
+  -moz-user-select: none; /* Firefox 2+ */
+  -ms-user-select: none; /* IE 10+ */
+  user-select: none; /* Standard syntax */
+}
+
+.collapsed:hover {
+  cursor: pointer;
+}
+
+.expanded:hover {
+  cursor: pointer;
 }
 
 .project-wrapper:hover .project {
@@ -92,29 +109,33 @@
   display: inline-block;
 }
 
-.project-info {
-  overflow-y: hidden;
-  max-height: 0;
-	transition-property: all;
-	transition-duration: 0.8s;
-	transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
 
-  border-right: 0.5px solid rgb(56, 56, 56);
-  border-left: 0.5px solid rgb(56, 56, 56);
-  background-color: rgb(19, 19, 22);
 
-  position: relative;
-  left: 3.5px;
-}
 
-.project-info .info-background {
-  display: block;
-  width: 99%;
-  min-height: 300px;
-  position: relative;
-  left: 7px;
-}
-
-.expanded .project-info {
-  max-height: 300px;
+@media only screen and (max-width: 812px) {
+  .projects-container {
+    width: 100%;
+    position: relative;
+    left: 2px;
+  }
+  .projects-overview {
+    max-width: 768px;
+    width: 100%;
+    margin: 0;
+    min-height: 122px;
+    border-right: none;
+    border-left: none;
+  }
+  .projects-overview h2 {
+    font-size: 48px;
+    top: 18px;
+  }
+  .pro-dec-1 {
+    min-width: 0px;
+    width: 100%;
+  }
+  .project {
+    border-right: none;
+    border-left: none;
+  }
 }

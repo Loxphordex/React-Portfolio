@@ -1,6 +1,9 @@
 import React from 'react'
-import quoterLanding from '../../images/quoter-landing.png'
 import './Projects.css'
+import './ProjectInfo.css'
+import Quoter from './Quoter/Quoter'
+import MiMood from './MiMood/MiMood'
+import Bookmarks from './Bookmarks/Bookmarks'
 
 export default class Projects extends React.Component {
 
@@ -12,6 +15,7 @@ export default class Projects extends React.Component {
 
   toggleProjectInfo(event) {
 
+
     const element = document.getElementById(event.target.id)
 
     if (!element) return;
@@ -21,14 +25,12 @@ export default class Projects extends React.Component {
     // Here the class "expanded" is being toggled for each project
     // This displays or colapses the info panel
     if(!isExpanded) {
-      console.log('has not')
       element.setAttribute('class', `project-wrapper expanded`)
       return;
     }
 
     if(isExpanded) {
-      console.log('has')
-      element.setAttribute('class', `project-wrapper`)
+      element.setAttribute('class', `project-wrapper collapsed`)
       return;
     }
   }
@@ -44,52 +46,11 @@ export default class Projects extends React.Component {
   
           <div className='projects-list'>
 
+            <Quoter toggleProjectInfo={this.toggleProjectInfo} />
 
+            <MiMood toggleProjectInfo={this.toggleProjectInfo} />
 
-            <div id='quoter' className='project-wrapper' 
-              onClick={(event) => this.toggleProjectInfo(event)}>
-
-              <div className='project quoter'>
-                <p>QUOTER</p>
-              </div>
-
-              <div className='project-info'>
-                <div className='info-background'>
-                  
-                </div>
-              </div>
-            </div>
-
-
-            <div id='miMood' className='project-wrapper'
-              onClick={(event) => this.toggleProjectInfo(event)}>
-
-              <div className='project miMood'>
-                <p>MIMOOD</p>
-              </div>
-
-              <div className='project-info'>
-                <div className='info-background'>
-                  
-                </div>
-              </div>
-            </div>
-
-
-            <div id='bookmarks' className='project-wrapper'
-              onClick={(event) => this.toggleProjectInfo(event)}>
-
-              <div className='project bookmarks'>
-                <p>BOOKMARKS</p>
-              </div>
-
-              <div className='project-info'>
-                <div className='info-background'>
-                  
-                </div>
-              </div>
-            </div>
-
+            <Bookmarks toggleProjectInfo={this.toggleProjectInfo} />
           </div>
         </div>
     ) 

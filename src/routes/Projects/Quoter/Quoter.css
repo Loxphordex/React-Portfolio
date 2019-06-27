@@ -1,0 +1,80 @@
+.quoter-project-image {
+  width: 300px;
+  float: left;
+  border-radius: 7%;
+  margin: 16px;
+  margin-left: 10px;
+}
+
+.quoter-mobile {
+  width: 148px;
+  border: 0.5px solid rgb(56, 56, 56);
+  border-radius: 7px;
+  margin: 18px;
+  /* position: relative;
+  right: 44px; */
+  position: static;
+  opacity: 0.8;
+}
+
+.quoter-title {
+  font-family: Poiret One,cursive;
+  display: block;
+  color: rgb(84, 84, 87);
+  font-size: 66px;
+  font-weight: 400;
+  position: relative;
+  margin: 0;
+}
+
+.vl1 {
+  /* right: 226px; */
+  bottom: 48px;
+}
+
+.v2 {
+    float: right;
+    left: 342px;
+    top: 100px;
+    height: 182px;
+}
+
+.hl1 {
+  width: 300px;
+}
+
+.quoter-img-container {
+  right: 30px;
+}
+
+
+
+@media only screen and (max-width: 812px) {
+  .quoter-img-container {
+    display: none;
+  }
+  .quoter-title {
+    font-size: 42px;
+    text-align: center;
+    margin-right: 20px;
+  }
+  .v2 {
+    left: 0;
+    top: 0;
+    float: initial;
+    height: 295px;
+  }
+  .hl1 {
+    width: 100%;
+  }
+  .quoter-links {
+    bottom: 0;
+    top: 32px;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .quoter-links {
+    top: 46px;
+  }
+}

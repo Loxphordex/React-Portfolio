@@ -10,6 +10,10 @@
   margin-right: -24%;
 }
 
+.main-nav {
+  min-width: 1000px;
+}
+
 .main-nav ul {
   list-style-type: none;
   margin: 0;
@@ -23,6 +27,8 @@
 .main-nav ul li {
   display: inline-block;
   width: 120px;
+  position: relative;
+  right: 8px;
 }
 
 .main-nav ul li a {
@@ -38,4 +44,37 @@
 
 .main-nav ul li a:hover {
   color: rgb(228, 220, 220);
+}
+
+
+
+
+
+@media only screen and (max-width: 812px) {
+  .name {
+    width: 100%;
+    margin: auto;
+    left: 0;
+    top: 6px;
+  }
+  .main-nav {
+    min-width: 0px;
+  }
+  .main-nav ul li {
+    right: 0;
+  }
+}
+
+
+
+@media only screen and (max-width: 375px) {
+  .main-nav ul li {
+    width: 100px;
+  }
+}
+
+@media only screen and (max-height: 500px) {
+  .main-nav {
+    min-width: 0px;
+  }
 }

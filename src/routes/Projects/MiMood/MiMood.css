@@ -1,0 +1,105 @@
+.miMood-image {
+  width: 180px;
+  float: left;
+  margin: 52px;
+  margin-top: 100px;
+  margin-left: 18px;
+  position: relative;
+  bottom: 44px;
+  right: 44px;
+}
+
+.vl3 {
+  right: 72px;
+  bottom: 20px;
+}
+
+.vl4 {
+  bottom: 20px;
+  border-left: 2px dotted rgb(56, 56, 56)
+}
+
+.miMood-mobile {
+  width: 148px;
+  border-radius: 7px;
+  opacity: 0.8;
+  position: relative;
+  right: 44px;
+  margin-top: 15px;
+}
+
+.miMood-info h2 {
+  display: inline-block;
+  font-size: 42px;
+  margin: 0;
+}
+
+.miMood-purple {
+  color: #8884d8;
+}
+
+.miMood-links {
+  display: inline-block;
+  width: 100px;
+  bottom: 85px;
+  left: 35px;
+  z-index: 50;
+}
+
+.miMood-links a {
+  margin-bottom: 10px
+}
+
+.miMood-tech {
+  top: 192px;
+}
+
+.mm-p {
+  left: 98px;
+}
+
+.mv2 {
+  height: 120px;
+}
+
+@media only screen and (max-width: 812px) {
+  .mm-p {
+    left: 0;
+  }
+  .miMood-links {
+    left: 0;
+    bottom: 0;
+    top: 225px;
+    float: left;
+    width: 100%;
+  }
+  .miMood-tech {
+    top: 26px;
+  }
+  .miMood-info {
+    display: inline-block;
+    text-align: center;
+    width: 96%;
+    bottom: 84px;
+  }
+  .miMood-info h2 {
+    text-align: center;
+    font-size: 33px;
+  }
+  .mv2 {
+    height: 200px;
+    left: -7px;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .miMood-tech {
+    top: 18px;
+  }
+  .miMood-info {
+    bottom: 60px;
+  }
+  .miMood-links {
+    top: 234px;
+  }
+}

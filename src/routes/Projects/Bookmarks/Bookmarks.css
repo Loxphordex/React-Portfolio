@@ -1,0 +1,64 @@
+.bookmarks-img-container {
+  width: 504px;
+  right: 50px;
+  top: 15px;
+  opacity: 0.8;
+}
+
+.bookmarks-wide {
+  width: 300px;
+  display: inline-block;
+  border-radius: 7px;
+  border: 1px solid rgb(56, 56, 56);
+  margin-right: 10px;
+
+  position: relative;
+  left: 6px;
+}
+
+.bookmarks-mobile {
+  width: 148px;
+  border-radius: 7px;
+
+  position: relative;
+  left: 25px;
+}
+
+.bm-vl {
+  right: -24px;
+}
+
+.bm-vl1 {
+  border: 2px dotted rgb(56, 56, 56);
+  height: 115px;
+
+  position: relative;
+  left: 6px;
+}
+
+.bkmrk-p {
+  left: 76px;
+}
+
+
+
+@media only screen and (max-width: 812px) {
+  .bookmarks-title {
+    text-align: center;
+  }
+  .bookmarks-links {
+    top: 10px;
+  }
+  .bm-vl {
+    right: 0;
+  }
+  .bkmrk-p {
+    left: 0;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .bookmarks-links {
+    top: 40px;
+  }
+}

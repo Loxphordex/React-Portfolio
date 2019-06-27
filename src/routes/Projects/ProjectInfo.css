@@ -1,0 +1,199 @@
+.end-project {
+  border-bottom: 0.5px solid rgb(56, 56, 56);
+}
+
+.project-info {
+  overflow-y: hidden;
+  max-height: 0;
+	transition-property: all;
+	transition-duration: 0.8s;
+	transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+
+  border-right: 0.5px solid rgb(56, 56, 56);
+  border-left: 0.5px solid rgb(56, 56, 56);
+  background-color: rgb(19, 19, 22);
+
+  position: relative;
+  left: 3.5px;
+
+  cursor: default;
+  width: 100%;
+}
+
+.project-info .info-background {
+  margin-top: 12px;
+  /* margin-left: 6px; */
+  display: block;
+  width: 99%;
+  min-height: 320px;
+  position: relative;
+  left: 7px;
+}
+
+.p-container {
+  text-align: left;
+  max-width: 330px;
+  position: relative;
+  left: 56px;
+}
+
+.expanded .project-info {
+  max-height: 320px;
+}
+
+.expanded:hover .project {
+  cursor: pointer;
+}
+
+.info-container {
+  width: 400px;
+  float: right;
+  position: relative;
+  right: 80px;
+  margin-top: 6px;
+  text-align: right;
+}
+
+.vl {
+  border-left: 1px solid rgb(56, 56, 56);
+  height: 200px;
+  position: relative;
+  display: inline-block;
+}
+
+.hl {
+  border-top: 1px solid rgb(56, 56, 56);
+  width: 200px;
+  position: relative;
+  display: inline-block;
+}
+
+.project-links {
+  position: relative;
+  bottom: 17px;
+}
+
+.project-links a {
+  display: inline-block;
+  text-decoration: none;
+  width: 95px;
+  min-height: 47px;
+  border: 0.5px solid rgb(56, 56, 56);
+  padding-top: 27px;
+  text-align: center;
+  background-color: rgb(24, 24, 27);
+  transition: all 0.2s;
+  margin-right: 10px;
+}
+
+.project-links a:visited {
+  color: rgb(192, 192, 192);
+}
+
+.project-links a:hover {
+  background-color: rgb(29, 31, 41);
+}
+
+.tech {
+  font-size: 14px;
+  font-weight: 200;
+
+  display: inline-block;
+  text-decoration: none;
+  width: 95px;
+  border: 0.5px solid rgb(56, 56, 56);
+  text-align: center;
+
+  color: rgb(192, 192, 192);
+  background-color: rgb(24, 24, 27);
+
+  transition: all 0.2s;
+  margin-right: 10px;
+
+  position: relative;
+  top: 26px;
+
+  cursor: pointer;
+  outline: none;
+}
+
+.tech:hover {
+  background-color: rgb(29, 31, 41);
+}
+
+.tech:hover .tech-info {
+  display: block;
+}
+
+.tech-info {
+  position: absolute;
+  display: none;
+  color: rgb(29, 31, 41);
+  background-color: rgb(192, 192, 192);
+  border: 1px solid rgb(29, 31, 41);;
+  width: 95px;
+
+  bottom: 20px;
+  right: 0;
+  left: -1px;
+
+  transition: all 0.3s;
+}
+
+.tech-info h3 {
+  margin-bottom: 0px;
+  margin-top: 25px;
+}
+
+.img-container {
+  display: inline-block;
+  position: relative;
+}
+
+@media only screen and (max-width: 812px) {
+  .info-container {
+    margin: auto;
+    width: 99%;
+    right: 0;
+  }
+  .project-info {
+    border-right: none;
+    border-left: none;
+  }
+  .p-container {
+    margin: auto;
+    left: 0;
+  }
+  .project-links {
+    text-align: center;
+  }
+  .img-container {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .project-links {
+    width: 300px;
+    margin: auto;
+  }
+  .project-links a {
+    min-height: 34px;
+    padding-top: 20px;
+  }
+  .project-links a, .project-links button {
+    font-size: 12px;
+    width: 70px;
+  }
+  .tech {
+    top: 18px;
+  }
+  .tech-info {
+    width: 69px;
+  }
+  .p-container {
+    left: 5px;
+    font-size: 14px;
+    width: 90%;
+  }
+}
