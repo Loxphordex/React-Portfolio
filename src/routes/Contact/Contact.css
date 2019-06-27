@@ -21,7 +21,7 @@
   min-height: 100vh;
   margin: 0;
   position: absolute;
-  bottom: -82px;
+  bottom: -49px;
 
   opacity: 0.2;
   z-index: -100;
@@ -57,5 +57,7 @@
 
 
 @media only screen and (max-width: 812px) {
-  
+  .contact-dec {
+    bottom: -82px;
+  }
 }

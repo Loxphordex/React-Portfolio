@@ -48,7 +48,6 @@
 }
 
 
-
 @media only screen and (max-width: 812px) {
   .quoter-img-container {
     display: none;
@@ -73,7 +72,13 @@
   }
 }
 
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 380px) {
+  .quoter-links {
+    top: 66px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
   .quoter-links {
     top: 46px;
   }
