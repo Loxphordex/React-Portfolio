@@ -1,12 +1,12 @@
 .about-me-container {
-  max-width: 800px;
+  min-width: 1000px;
   margin: auto;
   max-height: 600px;
-    -webkit-animation: fadein 0.2s; /* Safari, Chrome and Opera > 12.1 */
-       -moz-animation: fadein 0.2s; /* Firefox < 16 */
-        -ms-animation: fadein 0.2s; /* Internet Explorer */
-         -o-animation: fadein 0.2s; /* Opera < 12.1 */
-            animation: fadein 0.2s;
+  -webkit-animation: fadein 0.2s; /* Safari, Chrome and Opera > 12.1 */
+     -moz-animation: fadein 0.2s; /* Firefox < 16 */
+      -ms-animation: fadein 0.2s; /* Internet Explorer */
+       -o-animation: fadein 0.2s; /* Opera < 12.1 */
+          animation: fadein 0.2s;
 }
 
 .about-main {
@@ -43,7 +43,7 @@
   z-index: 1000;
 
   bottom: 174px;
-  left: 160px;
+  left: 265px;
 }
 
 .about-me-decoration {
@@ -54,12 +54,12 @@
     #444;
   background-size: 16px 48px;
 
-  width: 332px;
+  width: 307px;
   min-height: 506px;
   margin: auto;
   position: relative;
-  top: 90px;
-  right: 150px;
+  top: 48px;
+  right: 60px;
   z-index: 1;
   opacity: 0.2;
 
@@ -77,8 +77,8 @@
   min-height: 50px;
 
   position: relative;
-  bottom: 150px;
-  left: 200px;
+  bottom: 100px;
+  right: 234px;
   display: inline-block;
   z-index: 200
 }
@@ -100,11 +100,93 @@
   left: 30%;
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 812px) {
+  .about-me-container {
+    min-width: 0px;
+  }
+  .about-outer-border {
+    left: 100px;
+    bottom: 0;
+  }
+  .about-me-decoration {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 120px;
+    width: 290px;
+  }
+  .about-secondary-dec {
+    position: relative;
+    right: 168px;
+    bottom: 0;
+    top: 56px;
+    bottom: 152px;
+    margin: auto;
+  }
+}
+
+@media only screen and (max-width: 540px) {
   .about-main {
     max-height: 600px;
   }
+  .about-outer-border {
+    left: 0;
+    bottom: 0;
+  }
   .about-me-decoration {
     width: 290px;
+    position: absolute;
+    top: 120px;
+    right: 0;
+    left: 0;
+  }
+  .about-secondary-dec {
+    position: relative;
+    left: 0;
+    top: -100px;
+    bottom: 97px;
+  }
+  .split-2 {
+    min-height: 88vh;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  .about-desc {
+    font-size: 13px;
+    max-width: 262px;
+  }
+  .about-head {
+    right: 82px;
+  }
+}
+
+@media only screen and (max-height: 500px) {
+  .about-me-container {
+    min-width: 0;
+  }
+  .about-outer-border {
+    margin: auto;
+    margin-top: 10px;
+    left: 0px;
+    bottom: 0px;
+  }
+  .about-desc {
+    max-width: 415px;
+  }
+  .about-head {
+    display: none;
+  }
+  .about-me-decoration {
+    display: none;
+  }
+  .about-secondary-dec {
+    display: none;
+  }
+  .split-1 {
+    min-height: 0;
+  }
+  .split-2 {
+    min-height: 0;
   }
 }

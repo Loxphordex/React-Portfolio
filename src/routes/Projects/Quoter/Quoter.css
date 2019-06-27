@@ -49,13 +49,14 @@
 
 
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 812px) {
   .quoter-img-container {
     display: none;
   }
   .quoter-title {
     font-size: 42px;
     text-align: center;
+    margin-right: 20px;
   }
   .v2 {
     left: 0;
@@ -68,6 +69,12 @@
   }
   .quoter-links {
     bottom: 0;
-    top: 30px;
+    top: 32px;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .quoter-links {
+    top: 46px;
   }
 }

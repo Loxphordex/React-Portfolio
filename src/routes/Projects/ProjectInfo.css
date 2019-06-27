@@ -150,7 +150,7 @@
   position: relative;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 812px) {
   .info-container {
     margin: auto;
     width: 99%;
@@ -169,5 +169,31 @@
   }
   .img-container {
     display: none;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .project-links {
+    width: 300px;
+    margin: auto;
+  }
+  .project-links a {
+    min-height: 34px;
+    padding-top: 20px;
+  }
+  .project-links a, .project-links button {
+    font-size: 12px;
+    width: 70px;
+  }
+  .tech {
+    top: 18px;
+  }
+  .tech-info {
+    width: 69px;
+  }
+  .p-container {
+    left: 5px;
+    font-size: 14px;
+    width: 90%;
   }
 }

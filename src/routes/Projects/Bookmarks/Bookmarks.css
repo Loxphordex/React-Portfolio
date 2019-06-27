@@ -11,6 +11,9 @@
   border-radius: 7px;
   border: 1px solid rgb(56, 56, 56);
   margin-right: 10px;
+
+  position: relative;
+  left: 6px;
 }
 
 .bookmarks-mobile {
@@ -28,6 +31,9 @@
 .bm-vl1 {
   border: 2px dotted rgb(56, 56, 56);
   height: 115px;
+
+  position: relative;
+  left: 6px;
 }
 
 .bkmrk-p {
@@ -36,7 +42,7 @@
 
 
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 812px) {
   .bookmarks-title {
     text-align: center;
   }
@@ -48,5 +54,11 @@
   }
   .bkmrk-p {
     left: 0;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .bookmarks-links {
+    top: 40px;
   }
 }
