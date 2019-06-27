@@ -84,6 +84,7 @@
   background-color: rgb(24, 24, 27);
   transition: all 0.2s;
   margin-right: 10px;
+  color: rgb(192, 192, 192);
 }
 
 .project-links a:visited {
