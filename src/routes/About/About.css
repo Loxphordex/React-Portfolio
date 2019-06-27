@@ -74,13 +74,22 @@
     rgba(255,255,255,.5) 32px);
   
   width: 200px;
-  min-height: 50px;
+  min-height: 38px;
+  padding-top: 12px;
 
   position: relative;
   bottom: 100px;
   right: 234px;
   display: inline-block;
-  z-index: 200
+  z-index: 200;
+
+  font-size: 28px;
+  font-weight: 600;
+  color: rgb(18, 18, 20);
+}
+
+.about-tab {
+  background-color: rgb(79, 81, 88);
 }
 
 .split-1 {
@@ -98,6 +107,10 @@
 
   position: absolute;
   left: 30%;
+}
+
+.hidden {
+  display: none;
 }
 
 @media only screen and (max-width: 812px) {
@@ -145,6 +158,9 @@
     left: 0;
     top: -100px;
     bottom: 97px;
+  }
+  .about-tab {
+    top: -60px;
   }
   .split-2 {
     min-height: 88vh;
