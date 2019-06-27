@@ -16,12 +16,20 @@
 .about-head {
   font-family: 'Cantarell', sans-serif;
   position: relative;
-  top: 60px;
-  right: 107px;
+  bottom: 450px;
+  left: 240px;
   font-size: 27px;
 
   margin: 0;
   z-index: 5;
+
+  display: inline-block;
+
+  cursor: pointer;
+}
+
+.skills-head {
+  left: 250px;
 }
 
 .about-desc {
@@ -43,7 +51,6 @@
   z-index: 1000;
 
   bottom: 174px;
-  left: 265px;
 }
 
 .about-me-decoration {
@@ -59,7 +66,7 @@
   margin: auto;
   position: relative;
   top: 48px;
-  right: 60px;
+  right: 265px;
   z-index: 1;
   opacity: 0.2;
 
@@ -78,8 +85,7 @@
   padding-top: 12px;
 
   position: relative;
-  bottom: 100px;
-  right: 234px;
+  bottom: 270px;
   display: inline-block;
   z-index: 200;
 
@@ -113,12 +119,30 @@
   display: none;
 }
 
+.about-inactive {
+  color: rgb(116, 122, 148);
+}
+
+.skills h2 {
+  margin: 0;
+}
+
+.skills p {
+  margin-top: 2px;
+}
+
 @media only screen and (max-width: 812px) {
   .about-me-container {
     min-width: 0px;
   }
+  .about-head {
+    top: initial;
+    right: initial;
+    bottom: 280px;
+    left: 260px;
+  }
   .about-outer-border {
-    left: 100px;
+    left: 0px;
     bottom: 0;
   }
   .about-me-decoration {
@@ -130,7 +154,7 @@
   }
   .about-secondary-dec {
     position: relative;
-    right: 168px;
+    right: 272px;
     bottom: 0;
     top: 56px;
     bottom: 152px;
@@ -141,6 +165,11 @@
 @media only screen and (max-width: 540px) {
   .about-main {
     max-height: 600px;
+  }
+  .about-head {
+    top: 60px;
+    right: 60px;
+    left: initial;
   }
   .about-outer-border {
     left: 0;
@@ -165,6 +194,9 @@
   .split-2 {
     min-height: 88vh;
   }
+  .skills-head {
+    left: -50px;
+  }
 }
 
 @media only screen and (max-width: 350px) {
@@ -173,7 +205,10 @@
     max-width: 262px;
   }
   .about-head {
-    right: 82px;
+    right: 46px;
+  }
+  .skills-head {
+    left: -36px;
   }
 }
 
@@ -184,14 +219,23 @@
   .about-outer-border {
     margin: auto;
     margin-top: 10px;
-    left: 0px;
+    left: initial;
+    right: 97px;
     bottom: 0px;
+    top: 40px;
+  }
+  .about-head {
+    bottom: 208px;
+    left: 120px;
+  }
+  .skills-head {
+    left: 130px;
+  }
+  .skills h2 {
+    font-size: 27px;
   }
   .about-desc {
     max-width: 415px;
-  }
-  .about-head {
-    display: none;
   }
   .about-me-decoration {
     display: none;
@@ -204,5 +248,24 @@
   }
   .split-2 {
     min-height: 0;
+  }
+}
+
+@media only screen and (min-width: 1060px) {
+  .about-outer-border {
+    left: 150px;
+  }
+  .about-head {
+    left: 370px
+  }
+  .skills-head {
+    left: 380px;
+  }
+  .about-me-decoration {
+    right: 170px;
+  }
+  .about-secondary-dec {
+    right: 440px;
+    bottom: 100px;
   }
 }

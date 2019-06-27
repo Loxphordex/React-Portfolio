@@ -3,21 +3,32 @@ import './About.css'
 
 export default class About extends React.Component {
 
-  handleSkillsTab() {
-    const about = document.getElementById('about')
-    const skills = document.getElementById('skills')
-
-    about.setAttribute('class', 'about-container about-outer-border hidden')
-    skills.setAttribute('class', 'skills-container about-outer-border')
-  }
-
-
   handleAboutTab() {
     const about = document.getElementById('about')
     const skills = document.getElementById('skills')
 
+    const aboutHead = document.getElementById('about-head')
+    const skillsHead = document.getElementById('skills-head')
+
     about.setAttribute('class', 'about-container about-outer-border')
     skills.setAttribute('class', 'skills-container about-outer-border hidden')
+
+    aboutHead.setAttribute('class', 'about-head about-active')
+    skillsHead.setAttribute('class', 'about-head skills-head about-inactive' )
+  }
+
+  handleSkillsTab() {
+    const about = document.getElementById('about')
+    const skills = document.getElementById('skills')
+
+    const aboutHead = document.getElementById('about-head')
+    const skillsHead = document.getElementById('skills-head')
+
+    about.setAttribute('class', 'about-container about-outer-border hidden')
+    skills.setAttribute('class', 'skills-container about-outer-border')
+
+    aboutHead.setAttribute('class', 'about-head about-inactive')
+    skillsHead.setAttribute('class', 'about-head skills-head about-active' )
   }
   render() {
     return (
@@ -28,7 +39,11 @@ export default class About extends React.Component {
 
         <div className='about-main'>
 
-          <h2 className='about-head'>ABOUT</h2>
+          <h2 className='about-head about-active' id='about-head'
+            onClick={() => this.handleAboutTab()}>ABOUT</h2>
+
+          <h2 className='about-head skills-head about-inactive' id='skills-head'
+            onClick={() => this.handleSkillsTab()}>SKILLS</h2>
 
           <div className='about-container about-outer-border' id='about'>
             <section className='about-desc'>
@@ -58,11 +73,8 @@ export default class About extends React.Component {
           </div>
 
           <section className='about-me-decoration' />
+          <section className='about-secondary-dec' />
 
-          <section className='about-secondary-dec' 
-            onClick={() => this.handleSkillsTab()}>Skills</section>
-          <section className='about-secondary-dec about-tab'
-            onClick={() => this.handleAboutTab()}>About</section>
         </div>
       </div>
     )
