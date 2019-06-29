@@ -220,6 +220,8 @@
     margin: auto;
     margin-top: 10px;
     left: initial;
+    display: block;
+    border: none;
     /* right: 97px;
     bottom: 0px;
     top: 40px; */
@@ -237,6 +239,7 @@
   }
   .about-desc {
     max-width: 415px;
+    margin: auto;
   }
   .about-me-decoration {
     /* display: none; */
@@ -251,6 +254,9 @@
   }
   .split-2 {
     min-height: 0;
+  }
+  .hidden {
+    display: none;
   }
 }
 
