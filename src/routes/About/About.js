@@ -3,34 +3,34 @@ import './About.css'
 
 export default class About extends React.Component {
 
-  handleAboutTab() {
-    const about = document.getElementById('about')
-    const skills = document.getElementById('skills')
-
-    const aboutHead = document.getElementById('about-head')
-    const skillsHead = document.getElementById('skills-head')
-
-    about.setAttribute('class', 'about-container about-outer-border')
-    skills.setAttribute('class', 'skills-container about-outer-border hidden')
-
-    aboutHead.setAttribute('class', 'about-head about-active')
-    skillsHead.setAttribute('class', 'about-head skills-head about-inactive' )
+  state = {
+    aboutHidden: '',
+    aboutActive: 'about-active',
+    skillsHidden: 'hidden',
+    skillsActive: 'about-inactive'
   }
 
-  handleSkillsTab() {
-    const about = document.getElementById('about')
-    const skills = document.getElementById('skills')
-
-    const aboutHead = document.getElementById('about-head')
-    const skillsHead = document.getElementById('skills-head')
-
-    about.setAttribute('class', 'about-container about-outer-border hidden')
-    skills.setAttribute('class', 'skills-container about-outer-border')
-
-    aboutHead.setAttribute('class', 'about-head about-inactive')
-    skillsHead.setAttribute('class', 'about-head skills-head about-active' )
+  handleAboutTab = () => {
+    this.setState({ 
+      aboutHidden: '',
+      aboutActive: 'about-active',
+      skillsHidden: 'hidden',
+      skillsActive: 'about-inactive'
+    })
   }
+
+  handleSkillsTab = () => {
+    this.setState({ 
+      aboutHidden: 'hidden',
+      aboutActive: 'about-inactive',
+      skillsHidden: '',
+      skillsActive: 'about-active'
+    })
+  }
+  
   render() {
+    const { aboutHidden, aboutActive, skillsHidden, skillsActive } = this.state
+
     return (
       <div className='about-me-container'>
 
@@ -39,13 +39,13 @@ export default class About extends React.Component {
 
         <div className='about-main'>
 
-          <h2 className='about-head about-active' id='about-head'
+          <h2 className={`about-head ${aboutActive}`} id='about-head'
             onClick={() => this.handleAboutTab()}>ABOUT</h2>
 
-          <h2 className='about-head skills-head about-inactive' id='skills-head'
+          <h2 className={`about-head skills-head ${skillsActive}`} id='skills-head'
             onClick={() => this.handleSkillsTab()}>SKILLS</h2>
 
-          <div className='about-container about-outer-border' id='about'>
+          <div className={`about-container about-outer-border ${aboutHidden}`} id='about'>
             <section className='about-desc'>
                 <p>I'm in Seattle, WA. My passion for building and creativity comes from watching something grow out of nothing.</p>
     
@@ -57,7 +57,7 @@ export default class About extends React.Component {
             </section>
           </div>
 
-          <div className='skills-container about-outer-border hidden' id='skills'>
+          <div className={`skills-container about-outer-border ${skillsHidden}`} id='skills'>
             <div className='skills about-desc'>
               <h2>Front End</h2>
               <p>HTML, CSS3, Javascript ES6, jQuery, 
