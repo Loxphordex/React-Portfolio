@@ -35,7 +35,7 @@
   display: block;
   margin: auto;
   width: 80px;
-  padding: 16px;
+  padding: 16px 10px;
   text-decoration: none;
   color: rgb(134, 134, 134);
   font-size: 14px;
@@ -50,7 +50,7 @@
 
 
 
-@media only screen and (max-width: 812px) {
+@media only screen and (max-width: 760px) {
   .name {
     width: 100%;
     margin: auto;
