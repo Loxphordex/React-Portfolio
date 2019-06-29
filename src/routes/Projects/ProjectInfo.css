@@ -165,6 +165,12 @@
     border-right: none;
     border-left: none;
   }
+  .expanded .project-info {
+    max-height: 300px;
+  }
+  .info-background {
+    min-height: 0px;
+  }
   .p-container {
     margin: auto;
     left: 0;

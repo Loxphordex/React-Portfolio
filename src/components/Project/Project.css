@@ -76,7 +76,7 @@
   .project-links {
     left: 0;
     bottom: 0;
-    top: 225px;
+    top: 200px;
     float: left;
     width: 100%;
   }
@@ -90,7 +90,7 @@
     bottom: 84px;
   }
   .info-container h2 {
-    text-align: center;
+    text-align: left;
     font-size: 33px;
   }
   .p-container {
@@ -102,6 +102,10 @@
     height: 200px;
     left: -7px;
   }
+  .hl {
+    top: 2px;
+    display: block;
+  }
 }
 
 @media only screen and (max-width: 375px) {
@@ -112,7 +116,7 @@
     bottom: 60px;
   }
   .project-links {
-    top: 234px;
+    top: 222px;
   }
   .p-container {
     left: 0px;
