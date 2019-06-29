@@ -1,0 +1,21 @@
+/* QUOTER */
+.quoter-image {
+  border-radius: 7%;
+}
+.quoter-title {
+  font-family: 'Poiret One', sans-serif;
+  font-weight: 300;
+}
+
+/* MIMOOD */
+.miMood-image {
+  width: 210px;
+  margin-right: 48px;
+  right: 0;
+}
+
+
+/* BOOKMARKS */
+.bookmarks-image {
+  opacity: 0.8;
+}

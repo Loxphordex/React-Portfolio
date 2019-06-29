@@ -20,6 +20,10 @@
   width: 100%;
 }
 
+.last {
+  border-bottom: 0.5px solid rgb(56, 56, 56);
+}
+
 .project-info .info-background {
   margin-top: 12px;
   /* margin-left: 6px; */
@@ -32,7 +36,7 @@
 
 .p-container {
   text-align: left;
-  max-width: 330px;
+  max-width: 320px;
   position: relative;
   left: 56px;
 }
@@ -49,7 +53,7 @@
   width: 400px;
   float: right;
   position: relative;
-  right: 80px;
+  right: 46px;
   margin-top: 6px;
   text-align: right;
 }
@@ -151,7 +155,7 @@
   position: relative;
 }
 
-@media only screen and (max-width: 812px) {
+@media only screen and (max-width: 760px) {
   .info-container {
     margin: auto;
     width: 99%;

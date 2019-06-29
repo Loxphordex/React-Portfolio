@@ -75,7 +75,6 @@
   display: inline-block;
   margin: 0 3px;
   text-align: left;
-  pointer-events: none;
   cursor: pointer;
   transition: all 0.2s;
 
@@ -112,7 +111,7 @@
 
 
 
-@media only screen and (max-width: 812px) {
+@media only screen and (max-width: 760px) {
   .projects-container {
     width: 100%;
     position: relative;

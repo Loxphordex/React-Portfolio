@@ -131,7 +131,7 @@
   margin-top: 2px;
 }
 
-@media only screen and (max-width: 812px) {
+@media only screen and (max-width: 760px) {
   .about-me-container {
     min-width: 0px;
   }
@@ -220,16 +220,17 @@
     margin: auto;
     margin-top: 10px;
     left: initial;
-    right: 97px;
+    /* right: 97px;
     bottom: 0px;
-    top: 40px;
+    top: 40px; */
   }
   .about-head {
-    bottom: 208px;
-    left: 120px;
+    bottom: -10px;
+    left: initial;
+    right: 70px;
   }
   .skills-head {
-    left: 130px;
+    left: -58px;
   }
   .skills h2 {
     font-size: 27px;
@@ -238,7 +239,9 @@
     max-width: 415px;
   }
   .about-me-decoration {
-    display: none;
+    /* display: none; */
+    min-height: 300px;
+    width: 80%;
   }
   .about-secondary-dec {
     display: none;
