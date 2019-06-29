@@ -56,7 +56,7 @@
 }
 
 
-@media only screen and (max-width: 812px) {
+@media only screen and (max-width: 760px) {
   .contact-dec {
     bottom: -82px;
   }
