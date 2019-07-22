@@ -20,7 +20,7 @@ export default class Projects extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
-      currentView: 'quoter'
+      currentView: ''
     }
   }
 

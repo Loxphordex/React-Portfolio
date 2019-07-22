@@ -12,13 +12,13 @@ export default class Project extends React.Component {
     if (this.props.first) {
       setTimeout(() => {
         this.setState({ view: 'expanded' })
+        this.props.setCurrentView(this.props.name)
       }, 50)
     }
   }
 
   toggleProjectInfo = async(event) => {
     const name = event.target.id
-    const { view, projectName } = this.state
     const { setCurrentView } = this.props
     const checkView = this.props.currentView
 
@@ -28,18 +28,11 @@ export default class Project extends React.Component {
     }
 
     await setCurrentView(name)
-
-    const { currentView } = this.props
-    //console.log('currentView: ', currentView)
   }
 
   checkView = () => {
-    const { view, projectName } = this.state
-    const projectView = this.state.currentView
+    const { projectName } = this.state
     const { currentView } = this.props
-
-    //console.log(projectName,  view)
-    console.log(projectName, projectView)
 
     if (currentView === projectName) {
       return 'expanded'
@@ -51,9 +44,8 @@ export default class Project extends React.Component {
   }
 
   render() {
-    const { last, projectName } = this.state
+    const { last } = this.state
     const view = this.checkView()
-    //console.log(projectName, ': ', view)
     
     const {
       name,
