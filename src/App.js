@@ -6,29 +6,31 @@ import Projects from './routes/Projects/Projects'
 import Contact from './routes/Contact/Contact'
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-
-      <Route exact path='/'>
-        <Redirect to='/projects'/>
-      </Route>
-      
-      <Route path='/'>
-        <Header />
-
-        <Switch>
-
-          <Route path='/about'><About /></Route>
-
-          <Route path='/projects'><Projects /></Route>
-
-          <Route path='/contact'><Contact /></Route>
-
-        </Switch>
-      </Route>
-    </div>
-  );
+class App extends React.Component {
+  render() {
+    return (
+      <div className="App">
+  
+        <Route exact path='/'>
+          <Redirect to='/projects'/>
+        </Route>
+        
+        <Route path='/'>
+          <Header />
+  
+          <Switch>
+  
+            <Route path='/about'><About /></Route>
+  
+            <Route path='/projects'><Projects /></Route>
+  
+            <Route path='/contact'><Contact /></Route>
+  
+          </Switch>
+        </Route>
+      </div>
+    );
+  }
 }
 
 export default App;

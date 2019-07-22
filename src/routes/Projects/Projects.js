@@ -17,8 +17,19 @@ import bookmarksMobile from '../../images/bookmarks-mobile.png'
 import Project from '../../components/Project/Project'
 
 export default class Projects extends React.Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+      currentView: ''
+    }
+  }
+
+  setCurrentView = (name) => {
+    this.setState({ currentView: name })
+  }
 
   render() {
+    const { currentView } = this.state
     return (
         <div className='projects-container'>
         
@@ -43,6 +54,8 @@ export default class Projects extends React.Component {
                 and returns relevant quotes to spark inspiration.'
               paragraph2='Discover new authors as well as new perspectives.'
               last=''
+              setCurrentView={this.setCurrentView}
+              currentView={currentView}
             />
 
             <Project 
@@ -61,6 +74,8 @@ export default class Projects extends React.Component {
               paragraph2='This allows for a deeper understanding of both your own mood, 
                 and of how AI interacts with human emotion.'
               last=''
+              setCurrentView={this.setCurrentView}
+              currentView={currentView}
             />
 
             <Project 
@@ -79,13 +94,9 @@ export default class Projects extends React.Component {
               paragraph2='The app simply keeps a record of your bookmarks, 
                 and lets you filter them by rating.'
               last='last'
+              setCurrentView={this.setCurrentView}
+              currentView={currentView}
             />
-
-            {/* <Quoter toggleProjectInfo={this.toggleProjectInfo} />
-
-            <MiMood toggleProjectInfo={this.toggleProjectInfo} />
-
-            <Bookmarks toggleProjectInfo={this.toggleProjectInfo} /> */}
           </div>
         </div>
     ) 
