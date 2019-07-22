@@ -14,7 +14,6 @@
   background-color: rgb(19, 19, 22);
 
   position: relative;
-  left: 3.5px;
 
   cursor: default;
   width: 100%;
@@ -28,7 +27,7 @@
   margin-top: 12px;
   /* margin-left: 6px; */
   display: block;
-  width: 99%;
+  width: 98%;
   min-height: 320px;
   position: relative;
   left: 7px;
