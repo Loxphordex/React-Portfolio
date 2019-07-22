@@ -1,9 +1,11 @@
 import React from 'react'
 
-export default class MiMood extends React.Component {
+export default class Project extends React.Component {
   state = {
     view: 'collapsed',
-    last: this.props.last
+    last: this.props.last,
+    projectName: this.props.name,
+    currentView: this.props.currentView,
   }
 
   componentDidMount = () => {
@@ -14,23 +16,44 @@ export default class MiMood extends React.Component {
     }
   }
 
-  toggleProjectInfo = () => {
-    const { view } = this.state
+  toggleProjectInfo = async(event) => {
+    const name = event.target.id
+    const { view, projectName } = this.state
+    const { setCurrentView } = this.props
+    const checkView = this.props.currentView
 
-    if (view === 'collapsed') {
-      this.setState({ view: 'expanded' })
+    if (checkView === name) {
+      setCurrentView('')
       return
     }
 
-    if (view === 'expanded') {
-      this.setState({ view: 'collapsed' })
-      return
+    await setCurrentView(name)
+
+    const { currentView } = this.props
+    //console.log('currentView: ', currentView)
+  }
+
+  checkView = () => {
+    const { view, projectName } = this.state
+    const projectView = this.state.currentView
+    const { currentView } = this.props
+
+    //console.log(projectName,  view)
+    console.log(projectName, projectView)
+
+    if (currentView === projectName) {
+      return 'expanded'
     }
-    return
+
+    else {
+      return 'collapsed'
+    }
   }
 
   render() {
-    const { view, last } = this.state
+    const { last, projectName } = this.state
+    const view = this.checkView()
+    //console.log(projectName, ': ', view)
     
     const {
       name,
@@ -48,7 +71,7 @@ export default class MiMood extends React.Component {
     return(
       <div id={name} className={`project-wrapper ${view}`}>
 
-        <div className={`project ${name}`} onClick={() => this.toggleProjectInfo()}>
+        <div className={`project ${name}`}  id={name} onClick={(event) => this.toggleProjectInfo(event)}>
           <p>{title.toUpperCase()}</p>
         </div>
 
