@@ -24,8 +24,8 @@
   margin: 0 auto;
   min-height: 240px;
   text-align: left;
-  border-right: 0.5px solid rgb(56, 56, 56);
-  border-left: 0.5px solid rgb(56, 56, 56);
+  border-right: 1px solid rgb(56, 56, 56);
+  border-left: 1px solid rgb(56, 56, 56);
 }
 
 .projects-overview h2 {
@@ -67,6 +67,8 @@
 }
 
 .project {
+  box-sizing: border-box;
+
   width: 100%;
   min-height: 32px;
   border: 1px solid rgb(56, 56, 56);
