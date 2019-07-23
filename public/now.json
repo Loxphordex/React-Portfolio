@@ -8,12 +8,16 @@
         "dest": "/static/$1"
       },
       {
-        "src": ".*",
-        "dest": "/index.html"
+        "src": "^/favicon.ico",
+        "dest": "/favicon.png"
+      },
+      {
+        "src": "^/manifest.json",
+        "dest": "/manifest.json"
       },
       {
         "src": ".*",
-        "dest": "/favicon.png"
+        "dest": "/index.html"
       }
   ]
 }
