@@ -13,6 +13,8 @@ import happy from '../../images/happy.png'
 import newEntry from '../../images/miMood-newEntry.png'
 import bookmarksWide from '../../images/bookmarks-wide.png'
 import bookmarksMobile from '../../images/bookmarks-mobile.png'
+import mollyWide from '../../images/molly-desktop.png'
+import mollyMobile from '../../images/molly-mobile.png'
 
 import Project from '../../components/Project/Project'
 
@@ -46,7 +48,7 @@ export default class Projects extends React.Component {
               title='Quoter'
               photo={quoterLabel}
               mobilePhoto={quoterMobile}
-              frontEnd='Javascript, React'
+              frontEnd='JavaScript, React'
               backEnd='Express, PostgreSQL'
               liveLink='https://loxphordex-quoter-client.now.sh/'
               repoLink='https://github.com/Loxphordex/silas-capstone-client'
@@ -64,7 +66,7 @@ export default class Projects extends React.Component {
               title='miMood'
               photo={happy}
               mobilePhoto={newEntry}
-              frontEnd='Javascript, React, Recharts'
+              frontEnd='JavaScript, React, Recharts'
               backEnd='Express, PostgreSQL'
               liveLink='https://alt-states-mimood.now.sh/'
               repoLink='https://github.com/thinkful-ei-bee/Altered-States-Capstone'
@@ -80,11 +82,30 @@ export default class Projects extends React.Component {
 
             <Project 
               first={false}
+              name='molly'
+              title='Art by Molly Reusser'
+              photo={mollyWide}
+              mobilePhoto={mollyMobile}
+              frontEnd='JavaScript, React, Cloudinary API'
+              backEnd='Express, PostgreSQL'
+              liveLink='https://mollyreusser.com/'
+              repoLink='https://github.com/Loxphordex/molly-website'
+              paragraph1='An art portfolio for Seattle all-arounder Molly Reusser,
+                who also designed site. Several mediums are organized and displayed including illustration, 
+                sculpture and animation.'
+              paragraph2='Molly can customize the photos on her site using a secret authorization system.'
+              last=''
+              setCurrentView={this.setCurrentView}
+              currentView={currentView}
+            />
+
+            <Project 
+              first={false}
               name='bookmarks'
               title='Bookmarks'
               photo={bookmarksWide}
               mobilePhoto={bookmarksMobile}
-              frontEnd='Javascript, jQuery'
+              frontEnd='JavaScript, jQuery'
               backEnd=''
               liveLink='https://loxphordex.github.io/Bookmarks/'
               repoLink='https://github.com/Loxphordex/Bookmarks'
