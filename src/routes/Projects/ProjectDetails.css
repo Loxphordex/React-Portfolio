@@ -17,7 +17,16 @@
 
 /* BOOKMARKS */
 .bookmarks-image {
-  opacity: 0.8;
   top: 100px;
   border-radius: 7px;
+}
+
+/* ART BY MOLLY REUSSER */
+.molly-info h2 {
+  font-size: 30px;
+}
+
+.molly-image {
+  bottom: -36px;
+  border-radius: 3px;
 }
