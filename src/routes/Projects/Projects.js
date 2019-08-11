@@ -91,8 +91,8 @@ export default class Projects extends React.Component {
               liveLink='https://mollyreusser.com/'
               repoLink='https://github.com/Loxphordex/molly-website'
               paragraph1='An art portfolio for Seattle all-arounder Molly Reusser,
-                who also designed site. Several mediums are organized and displayed including illustration, 
-                sculpture and animation.'
+                who also designed the site. Several mediums are organized and displayed including illustration, 
+                sculpture, and animation.'
               paragraph2='Molly can customize the photos on her site using a secret authorization system.'
               last=''
               setCurrentView={this.setCurrentView}
