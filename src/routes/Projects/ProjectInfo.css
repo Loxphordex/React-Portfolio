@@ -89,11 +89,11 @@
   background-color: rgb(24, 24, 27);
   transition: all 0.2s;
   margin-right: 10px;
-  color: rgb(192, 192, 192);
+  color: rgb(241, 241, 241);
 }
 
 .project-links a:visited {
-  color: rgb(192, 192, 192);
+  color: rgb(241, 241, 241);
 }
 
 .project-links a:hover {
@@ -110,7 +110,7 @@
   border: 0.5px solid rgb(56, 56, 56);
   text-align: center;
 
-  color: rgb(192, 192, 192);
+  color: rgb(241, 241, 241);
   background-color: rgb(24, 24, 27);
 
   transition: all 0.2s;
@@ -135,7 +135,7 @@
   position: absolute;
   display: none;
   color: rgb(29, 31, 41);
-  background-color: rgb(192, 192, 192);
+  background-color: rgb(241, 241, 241);
   border: 1px solid rgb(29, 31, 41);;
   width: 95px;
 
