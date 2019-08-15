@@ -10,6 +10,7 @@ import './ProjectDetails.css'
 import quoterLabel from '../../images/quoter-label.png'
 import quoterMobile from '../../images/quoter-mobile.png'
 import quoterDesk1 from '../../images/quoter-red.png'
+import quoterLanding from '../../images/quoter-landing.png'
 import happy from '../../images/happy.png'
 import newEntry from '../../images/miMood-newEntry.png'
 import bookmarksWide from '../../images/bookmarks-wide.png'
@@ -42,6 +43,7 @@ export default class Projects extends React.Component {
         quoter: [
           quoterDesk1,
           quoterMobile,
+          quoterLanding,
         ],
       }
     })
