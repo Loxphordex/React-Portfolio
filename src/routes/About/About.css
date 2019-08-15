@@ -35,7 +35,7 @@
 .about-desc {
   text-align: left;
   font-size: 15px;
-  border: 0.5px solid rgb(151, 151, 151);
+  border: 1px solid rgb(151, 151, 151);
   background-color: rgb(18, 18, 20);
   max-width: 300px;
   padding: 16px;

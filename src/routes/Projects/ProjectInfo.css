@@ -1,5 +1,5 @@
 .end-project {
-  border-bottom: 0.5px solid rgb(56, 56, 56);
+  border-bottom: 1px solid rgb(56, 56, 56);
 }
 
 .project-info {
@@ -22,28 +22,26 @@
 }
 
 .last {
-  border-bottom: 0.5px solid rgb(56, 56, 56);
+  border-bottom: 1px solid rgb(56, 56, 56);
 }
 
 .project-info .info-background {
-  margin-top: 12px;
-  /* margin-left: 6px; */
-  display: block;
-  width: 98%;
-  min-height: 320px;
+  display: grid;
+  grid-template-columns: 1fr 1.6fr 1fr 1fr;
+  grid-template-rows: 250px 1fr;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  min-height: 700px;
   position: relative;
-  left: 7px;
 }
 
 .p-container {
-  text-align: left;
-  max-width: 320px;
   position: relative;
-  left: 56px;
 }
 
 .expanded .project-info {
-  max-height: 320px;
+  max-height: 700px;
 }
 
 .expanded:hover .project {
@@ -51,12 +49,13 @@
 }
 
 .info-container {
-  width: 400px;
-  float: right;
   position: relative;
-  right: 46px;
-  margin-top: 6px;
-  text-align: right;
+  text-align: left;
+  display: inline-block;
+  margin-top: 22px;
+
+  grid-column: 2/4;
+  grid-row: 1/2;
 }
 
 .vl {
@@ -68,22 +67,21 @@
 
 .hl {
   border-top: 1px solid rgb(56, 56, 56);
-  width: 200px;
+  width: 100%;
   position: relative;
   display: inline-block;
 }
 
 .project-links {
   position: relative;
-  bottom: 17px;
 }
 
 .project-links a {
   display: inline-block;
   text-decoration: none;
-  width: 95px;
+  width: 94px;
   min-height: 47px;
-  border: 0.5px solid rgb(56, 56, 56);
+  border: 1px solid rgb(56, 56, 56);
   padding-top: 27px;
   text-align: center;
   background-color: rgb(24, 24, 27);
@@ -107,7 +105,7 @@
   display: inline-block;
   text-decoration: none;
   width: 95px;
-  border: 0.5px solid rgb(56, 56, 56);
+  border: 1px solid rgb(56, 56, 56);
   text-align: center;
 
   color: rgb(241, 241, 241);
@@ -141,7 +139,7 @@
 
   bottom: 20px;
   right: 0;
-  left: -1px;
+  left: -2px;
 
   transition: all 0.3s;
 }
@@ -152,8 +150,7 @@
 }
 
 .img-container {
-  display: inline-block;
-  position: relative;
+  margin: 20% auto;
 }
 
 @media only screen and (max-width: 760px) {

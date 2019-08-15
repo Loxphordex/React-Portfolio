@@ -9,6 +9,7 @@ import './ProjectDetails.css'
 // IMAGES
 import quoterLabel from '../../images/quoter-label.png'
 import quoterMobile from '../../images/quoter-mobile.png'
+import quoterDesk1 from '../../images/quoter-red.png'
 import happy from '../../images/happy.png'
 import newEntry from '../../images/miMood-newEntry.png'
 import bookmarksWide from '../../images/bookmarks-wide.png'
@@ -22,16 +23,32 @@ export default class Projects extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
-      currentView: ''
+      currentView: '',
+      images: {},
     }
+  }
+
+  componentDidMount() {
+    this.generateImages()
   }
 
   setCurrentView = (name) => {
     this.setState({ currentView: name })
   }
 
+  generateImages = () => {
+    this.setState({
+      images: {
+        quoter: [
+          quoterDesk1,
+          quoterMobile,
+        ],
+      }
+    })
+  }
+
   render() {
-    const { currentView } = this.state
+    const { currentView, images } = this.state
     return (
         <div className='projects-container'>
         
@@ -48,6 +65,7 @@ export default class Projects extends React.Component {
               title='Quoter'
               photo={quoterLabel}
               mobilePhoto={quoterMobile}
+              images={images.quoter}
               frontEnd='JavaScript, React'
               backEnd='Express, PostgreSQL'
               liveLink='https://loxphordex-quoter-client.now.sh/'
