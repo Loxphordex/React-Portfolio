@@ -9,7 +9,6 @@ export default function Header() {
         <h1 className='name'> <Link to='projects'>SILAS HALLAHAN</Link> </h1>
         <li><Link to='/about'>About</Link></li>
         <li><Link to='/projects'>Projects</Link></li>
-        <li><Link to='/contact'>Contact</Link></li>
       </ul>
     </nav>
   )

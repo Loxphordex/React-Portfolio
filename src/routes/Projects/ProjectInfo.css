@@ -1,5 +1,5 @@
 .end-project {
-  border-bottom: 0.5px solid rgb(56, 56, 56);
+  border-bottom: 1px solid rgb(56, 56, 56);
 }
 
 .project-info {
@@ -13,37 +13,37 @@
 
   border-right: 1px solid rgb(56, 56, 56);
   border-left: 1px solid rgb(56, 56, 56);
-  background-color: rgb(19, 19, 22);
+  background-color: rgb(45, 45, 49);
 
   position: relative;
 
   cursor: default;
   width: 100%;
+  min-width: 800px;
 }
 
 .last {
-  border-bottom: 0.5px solid rgb(56, 56, 56);
+  border-bottom: 1px solid rgb(56, 56, 56);
 }
 
 .project-info .info-background {
-  margin-top: 12px;
-  /* margin-left: 6px; */
-  display: block;
-  width: 98%;
-  min-height: 320px;
+  display: grid;
+  grid-template-columns: 210px 1.6fr 1fr 2fr;
+  grid-template-rows: 215px 1fr;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  min-height: 700px;
   position: relative;
-  left: 7px;
 }
 
 .p-container {
-  text-align: left;
-  max-width: 320px;
   position: relative;
-  left: 56px;
+  font-size: 14px;
 }
 
 .expanded .project-info {
-  max-height: 320px;
+  max-height: 645px;
 }
 
 .expanded:hover .project {
@@ -51,11 +51,27 @@
 }
 
 .info-container {
-  width: 400px;
-  float: right;
   position: relative;
-  right: 46px;
+  text-align: left;
+  display: inline-block;
+  margin-top: 22px;
+
+  grid-column: 2/4;
+  grid-row: 1/2;
+}
+
+.links-area {
   margin-top: 6px;
+  float: right;
+  width: 50px;
+}
+
+.links-area a {
+  color: rgb(241, 241, 241);
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  margin: 0;
   text-align: right;
 }
 
@@ -67,37 +83,10 @@
 }
 
 .hl {
-  border-top: 1px solid rgb(56, 56, 56);
-  width: 200px;
+  border-top: 1px solid rgb(74, 74, 74);
+  width: 100%;
   position: relative;
   display: inline-block;
-}
-
-.project-links {
-  position: relative;
-  bottom: 17px;
-}
-
-.project-links a {
-  display: inline-block;
-  text-decoration: none;
-  width: 95px;
-  min-height: 47px;
-  border: 0.5px solid rgb(56, 56, 56);
-  padding-top: 27px;
-  text-align: center;
-  background-color: rgb(24, 24, 27);
-  transition: all 0.2s;
-  margin-right: 10px;
-  color: rgb(192, 192, 192);
-}
-
-.project-links a:visited {
-  color: rgb(192, 192, 192);
-}
-
-.project-links a:hover {
-  background-color: rgb(29, 31, 41);
 }
 
 .tech {
@@ -106,18 +95,13 @@
 
   display: inline-block;
   text-decoration: none;
-  width: 95px;
-  border: 0.5px solid rgb(56, 56, 56);
+  border: 1px solid rgb(56, 56, 56);
   text-align: center;
 
-  color: rgb(192, 192, 192);
+  color: rgb(241, 241, 241);
   background-color: rgb(24, 24, 27);
 
   transition: all 0.2s;
-  margin-right: 10px;
-
-  position: relative;
-  top: 26px;
 
   cursor: pointer;
   outline: none;
@@ -135,13 +119,13 @@
   position: absolute;
   display: none;
   color: rgb(29, 31, 41);
-  background-color: rgb(192, 192, 192);
+  background-color: rgb(241, 241, 241);
   border: 1px solid rgb(29, 31, 41);;
   width: 95px;
 
   bottom: 20px;
   right: 0;
-  left: -1px;
+  left: -2px;
 
   transition: all 0.3s;
 }
@@ -152,60 +136,34 @@
 }
 
 .img-container {
-  display: inline-block;
-  position: relative;
+  margin-top: 38px;
 }
 
-@media only screen and (max-width: 760px) {
-  .info-container {
-    margin: auto;
-    width: 99%;
-    right: 0;
-  }
+@media only screen and (max-width: 768px) {
   .project-info {
-    border-right: none;
-    border-left: none;
+    min-width: initial;
+  }
+  .project-info .info-background {
+    display: block;
   }
   .expanded .project-info {
-    max-height: 300px;
+    max-height: max-content;
   }
-  .info-background {
-    min-height: 0px;
+  .info-container {
+    padding: 0 4%;
   }
-  .p-container {
+  .info-container h2 {
+    text-align: center;
+    display: block !important;
+  }
+  .links-area {
+    display: block;
+    width: 100%;
     margin: auto;
-    left: 0;
-  }
-  .project-links {
+    margin-top: 3%;
     text-align: center;
   }
-  .img-container {
-    display: none;
-  }
-}
-
-@media only screen and (max-width: 375px) {
-  .project-links {
-    width: 300px;
-    margin: auto;
-  }
-  .project-links a {
-    min-height: 34px;
-    padding-top: 20px;
-  }
-  .project-links a, .project-links button {
-    font-size: 12px;
-    width: 70px;
-  }
-  .tech {
-    top: 18px;
-  }
-  .tech-info {
-    width: 69px;
-  }
-  .p-container {
-    left: 5px;
-    font-size: 14px;
-    width: 90%;
+  .links-area a {
+    margin: 2%;
   }
 }

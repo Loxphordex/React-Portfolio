@@ -1,5 +1,5 @@
 .name {
-  color: rgb(134, 134, 134);
+  color: rgb(241, 241, 241);
   float: left;
   margin: 0;
   position: relative;
@@ -11,12 +11,8 @@
 }
 
 .name a {
-  color: rgb(134, 134, 134);
+  color: rgb(241, 241, 241);
   text-decoration: none;
-}
-
-.main-nav {
-  min-width: 1000px;
 }
 
 .main-nav ul {
@@ -24,9 +20,7 @@
   margin: 0;
   padding: 0;
   width: 100%;
-  border: 0.5px solid rgb(56, 56, 56);
-  border-left: none;
-  border-right: none;
+  border-bottom: 1px solid rgb(56, 56, 56);
 }
 
 .main-nav ul li {
@@ -42,20 +36,16 @@
   width: 80px;
   padding: 16px 10px;
   text-decoration: none;
-  color: rgb(134, 134, 134);
+  color: rgb(241, 241, 241);
   font-size: 14px;
   transition: all 0.15s;
 }
 
 .main-nav ul li a:hover {
-  color: rgb(228, 220, 220);
+  color: rgb(255, 255, 255);
 }
 
-
-
-
-
-@media only screen and (max-width: 760px) {
+@media only screen and (max-width: 768px) {
   .name {
     width: 100%;
     margin: auto;
@@ -69,8 +59,6 @@
     right: 0;
   }
 }
-
-
 
 @media only screen and (max-width: 375px) {
   .main-nav ul li {
