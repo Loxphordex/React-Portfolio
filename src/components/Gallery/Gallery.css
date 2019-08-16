@@ -5,6 +5,7 @@
   overflow:  -moz-scrollbars-none;
   -ms-overflow-style: none;
   white-space: nowrap;
+  scroll-behavior: smooth;
   margin-top: 10px;
 }
 
