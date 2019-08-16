@@ -20,3 +20,9 @@
   margin: 0 16px;
   margin-bottom: 14px;
 }
+
+@media only screen and (max-width: 768px) {
+  .gallery-area img {
+    max-width: 300px;
+  }
+}

@@ -33,6 +33,10 @@ export default class Projects extends React.Component {
 
   setCurrentView = (name) => {
     this.setState({ currentView: name })
+    if (window.innerWidth < 768) {
+      const toTop = document.getElementById('projects-list')
+      toTop.scrollIntoView({ behavior: 'smooth' })
+    }
   }
 
   generateImages = () => {
@@ -63,7 +67,7 @@ export default class Projects extends React.Component {
             <section className='pro-dec-1' />
           </div>
   
-          <div className='projects-list'>
+          <div className='projects-list' id='projects-list'>
 
           <Project 
               first={true}

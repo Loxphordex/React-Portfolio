@@ -54,10 +54,3 @@
   color: rgb(241, 241, 241);
   display: block;
 }
-
-
-@media only screen and (max-width: 760px) {
-  .contact-dec {
-    bottom: -82px;
-  }
-}
