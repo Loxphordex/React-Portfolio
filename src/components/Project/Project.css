@@ -21,19 +21,9 @@
 }
 
 .info-container h2 {
-  display: block;
+  display: inline-block;
   font-size: 42px;
   margin: 0;
-}
-
-.project-links {
-  margin: 0 auto;
-  width: 100px;
-  z-index: 50;
-}
-
-.project-links a {
-  margin-bottom: 10px
 }
 
 .tech {
@@ -46,17 +36,20 @@
   bottom: 74px;
 }
 
+.tech-area {
+  grid-column: 4/5;
+  grid-row: 1/2;
+  margin: auto;
+  width: 160px;
+  font-size: 32px;
+}
+
+.tech-area i {
+  margin: 4%;
+  display: inline-block;
+}
+
 @media only screen and (max-width: 760px) {
-  .project-links {
-    left: 0;
-  }
-  .project-links {
-    left: 0;
-    bottom: 0;
-    top: 200px;
-    float: left;
-    width: 100%;
-  }
   .tech {
     top: 26px;
   }
@@ -91,9 +84,6 @@
   }
   .info-container {
     bottom: 60px;
-  }
-  .project-links {
-    top: 222px;
   }
   .p-container {
     left: 0px;

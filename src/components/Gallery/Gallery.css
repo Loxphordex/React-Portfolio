@@ -1,8 +1,14 @@
 .gallery-area {
-  grid-column: 1/5;
+  grid-column: 1/6;
   overflow-x: scroll;
   overflow-y: hidden;
+  overflow:  -moz-scrollbars-none;
+  -ms-overflow-style: none;
   white-space: nowrap;
+}
+
+.gallery-area::-webkit-scrollbar { 
+  width: 0 !important;
 }
 
 .gallery-area img {
@@ -10,5 +16,6 @@
   max-height: 400px;
   box-shadow: 0 4px 8px rgba(15, 15, 15, 0.63);
   border-radius: 5px;
-  margin: 0 12px;
+  margin: 0 16px;
+  margin-bottom: 14px;
 }

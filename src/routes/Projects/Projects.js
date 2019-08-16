@@ -9,6 +9,7 @@ import './ProjectDetails.css'
 // IMAGES
 import quoterLabel from '../../images/quoter-label.png'
 import quoterMobile from '../../images/quoter-mobile.png'
+import quoterMobile2 from '../../images/quoter-mobile-2.png'
 import quoterDesk1 from '../../images/quoter-red.png'
 import quoterLanding from '../../images/quoter-landing.png'
 import happy from '../../images/happy.png'
@@ -26,6 +27,7 @@ export default class Projects extends React.Component {
     this.state = {
       currentView: '',
       images: {},
+      iconClasses: {},
     }
   }
 
@@ -44,13 +46,27 @@ export default class Projects extends React.Component {
           quoterDesk1,
           quoterMobile,
           quoterLanding,
+          quoterMobile2,
         ],
+      },
+
+      iconClasses: {
+        quoter: [
+          'devicon-javascript-plain',
+          'devicon-html5-plain',
+          'devicon-css3-plain',
+          'devicon-react-original',
+          'devicon-nodejs-plain',
+          'devicon-express-original',
+          'devicon-mocha-plain',
+          'devicon-postgresql-plain',
+        ]
       }
     })
   }
 
   render() {
-    const { currentView, images } = this.state
+    const { currentView, images, iconClasses } = this.state
     return (
         <div className='projects-container'>
         
@@ -68,6 +84,7 @@ export default class Projects extends React.Component {
               photo={quoterLabel}
               mobilePhoto={quoterMobile}
               images={images.quoter}
+              icons={iconClasses.quoter}
               frontEnd='JavaScript, React'
               backEnd='Express, PostgreSQL'
               liveLink='https://loxphordex-quoter-client.now.sh/'
