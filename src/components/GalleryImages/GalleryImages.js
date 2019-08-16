@@ -14,6 +14,13 @@ import bookmarksWide from '../../images/bookmarks-wide.png'
 import bookmarksMobile from '../../images/bookmarks-mobile.png'
 
 export default {
+  molly: [
+    mollyMobile,
+    mollyMobile2,
+    mollyFS,
+    mollyWide,
+    mollyCategories,
+  ],
   quoter: [
     quoterDesk1,
     quoterMobile,
@@ -25,11 +32,8 @@ export default {
     miMoodDashboard,
     miMoodAnalysis,
   ],
-  molly: [
-    mollyMobile,
-    mollyMobile2,
-    mollyFS,
-    mollyWide,
-    mollyCategories,
+  bookmarks: [
+    bookmarksMobile,
+    bookmarksWide,
   ]
 }

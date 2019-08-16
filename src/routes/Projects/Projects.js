@@ -8,18 +8,9 @@ import './ProjectDetails.css'
 
 // IMAGES
 import quoterLabel from '../../images/quoter-label.png'
-import quoterMobile from '../../images/quoter-mobile.png'
-import quoterMobile2 from '../../images/quoter-mobile-2.png'
-import quoterDesk1 from '../../images/quoter-red.png'
-import quoterLanding from '../../images/quoter-landing.png'
 import happy from '../../images/happy.png'
-import newEntry from '../../images/miMood-newEntry.png'
-import miMoodDashboard from '../../images/miMood-dashboard.png'
-import miMoodAnalysis from '../../images/miMood-analysis.png'
 import bookmarksWide from '../../images/bookmarks-wide.png'
-import bookmarksMobile from '../../images/bookmarks-mobile.png'
 import mollyWide from '../../images/molly-desktop.png'
-import mollyMobile from '../../images/molly-mobile.png'
 
 // COMPONENTS
 import Project from '../../components/Project/Project'
@@ -47,15 +38,17 @@ export default class Projects extends React.Component {
   generateImages = () => {
     this.setState({
       images: {
+        molly: galleryImages.molly,
         quoter: galleryImages.quoter,
         miMood: galleryImages.miMood,
-        molly: galleryImages.molly,
+        bookmarks: galleryImages.bookmarks,
       },
 
       iconClasses: {
+        molly: icons.molly,
         quoter: icons.quoter,
         miMood: icons.miMood,
-        molly: icons.molly,
+        bookmarks: icons.bookmarks,
       }
     })
   }
@@ -131,9 +124,8 @@ export default class Projects extends React.Component {
               name='bookmarks'
               title='Bookmarks'
               photo={bookmarksWide}
-              mobilePhoto={bookmarksMobile}
-              frontEnd='JavaScript, jQuery'
-              backEnd=''
+              images={images.bookmarks}
+              icons={iconClasses.bookmarks}
               liveLink='https://loxphordex.github.io/Bookmarks/'
               repoLink='https://github.com/Loxphordex/Bookmarks'
               paragraph1='This was the first Javascript project I worked on. 

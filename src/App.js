@@ -3,7 +3,6 @@ import { Switch, Route, Redirect } from 'react-router-dom'
 import Header from './components/Header/Header'
 import About from './routes/About/About'
 import Projects from './routes/Projects/Projects'
-import Contact from './routes/Contact/Contact'
 import './App.css';
 
 class App extends React.Component {
@@ -21,10 +20,7 @@ class App extends React.Component {
           <Switch>
   
             <Route path='/about'><About /></Route>
-  
             <Route path='/projects'><Projects /></Route>
-  
-            <Route path='/contact'><Contact /></Route>
   
           </Switch>
         </Route>
