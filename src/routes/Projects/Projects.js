@@ -14,12 +14,17 @@ import quoterDesk1 from '../../images/quoter-red.png'
 import quoterLanding from '../../images/quoter-landing.png'
 import happy from '../../images/happy.png'
 import newEntry from '../../images/miMood-newEntry.png'
+import miMoodDashboard from '../../images/miMood-dashboard.png'
+import miMoodAnalysis from '../../images/miMood-analysis.png'
 import bookmarksWide from '../../images/bookmarks-wide.png'
 import bookmarksMobile from '../../images/bookmarks-mobile.png'
 import mollyWide from '../../images/molly-desktop.png'
 import mollyMobile from '../../images/molly-mobile.png'
 
+// COMPONENTS
 import Project from '../../components/Project/Project'
+import icons from '../../components/IconClasses/IconClasses'
+import galleryImages from '../../components/GalleryImages/GalleryImages'
 
 export default class Projects extends React.Component {
   constructor(props) {
@@ -42,25 +47,15 @@ export default class Projects extends React.Component {
   generateImages = () => {
     this.setState({
       images: {
-        quoter: [
-          quoterDesk1,
-          quoterMobile,
-          quoterLanding,
-          quoterMobile2,
-        ],
+        quoter: galleryImages.quoter,
+        miMood: galleryImages.miMood,
+        molly: galleryImages.molly,
       },
 
       iconClasses: {
-        quoter: [
-          'devicon-javascript-plain',
-          'devicon-html5-plain',
-          'devicon-css3-plain',
-          'devicon-react-original',
-          'devicon-nodejs-plain',
-          'devicon-express-original',
-          'devicon-mocha-plain',
-          'devicon-postgresql-plain',
-        ]
+        quoter: icons.quoter,
+        miMood: icons.miMood,
+        molly: icons.molly,
       }
     })
   }
@@ -77,16 +72,31 @@ export default class Projects extends React.Component {
   
           <div className='projects-list'>
 
-            <Project 
+          <Project 
               first={true}
+              name='molly'
+              title='Art by Molly Reusser'
+              photo={mollyWide}
+              images={images.molly}
+              icons={iconClasses.molly}
+              liveLink='https://mollyreusser.com/'
+              repoLink='https://github.com/Loxphordex/molly-website'
+              paragraph1='An art portfolio for Seattle all-arounder Molly Reusser,
+                who also designed the site. Several mediums are organized and displayed including illustration, 
+                sculpture, and animation.'
+              paragraph2='Molly can customize the photos on her site using a secret authorization system.'
+              last=''
+              setCurrentView={this.setCurrentView}
+              currentView={currentView}
+            />
+
+            <Project 
+              first={false}
               name='quoter'
               title='Quoter'
               photo={quoterLabel}
-              mobilePhoto={quoterMobile}
               images={images.quoter}
               icons={iconClasses.quoter}
-              frontEnd='JavaScript, React'
-              backEnd='Express, PostgreSQL'
               liveLink='https://loxphordex-quoter-client.now.sh/'
               repoLink='https://github.com/Loxphordex/silas-capstone-client'
               paragraph1='A journal app that scans what you write, 
@@ -102,9 +112,8 @@ export default class Projects extends React.Component {
               name='miMood'
               title='miMood'
               photo={happy}
-              mobilePhoto={newEntry}
-              frontEnd='JavaScript, React, Recharts'
-              backEnd='Express, PostgreSQL'
+              images={images.miMood}
+              icons={iconClasses.miMood}
               liveLink='https://alt-states-mimood.now.sh/'
               repoLink='https://github.com/thinkful-ei-bee/Altered-States-Capstone'
               paragraph1='Track your emotions using AI. 
@@ -112,25 +121,6 @@ export default class Projects extends React.Component {
                 analyze the input.'
               paragraph2='This allows for a deeper understanding of both your own mood, 
                 and of how AI interacts with human emotion.'
-              last=''
-              setCurrentView={this.setCurrentView}
-              currentView={currentView}
-            />
-
-            <Project 
-              first={false}
-              name='molly'
-              title='Art by Molly Reusser'
-              photo={mollyWide}
-              mobilePhoto={mollyMobile}
-              frontEnd='JavaScript, React, Cloudinary API'
-              backEnd='Express, PostgreSQL'
-              liveLink='https://mollyreusser.com/'
-              repoLink='https://github.com/Loxphordex/molly-website'
-              paragraph1='An art portfolio for Seattle all-arounder Molly Reusser,
-                who also designed the site. Several mediums are organized and displayed including illustration, 
-                sculpture, and animation.'
-              paragraph2='Molly can customize the photos on her site using a secret authorization system.'
               last=''
               setCurrentView={this.setCurrentView}
               currentView={currentView}

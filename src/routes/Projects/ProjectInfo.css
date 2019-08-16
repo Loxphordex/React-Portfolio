@@ -39,10 +39,11 @@
 
 .p-container {
   position: relative;
+  font-size: 14px;
 }
 
 .expanded .project-info {
-  max-height: 635px;
+  max-height: 645px;
 }
 
 .expanded:hover .project {

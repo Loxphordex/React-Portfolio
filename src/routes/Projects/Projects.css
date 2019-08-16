@@ -44,13 +44,11 @@
 }
 
 .pro-dec-1 {
-  position: absolute;
   opacity: 0.6;
 
   background: linear-gradient(59deg, #999 40%, transparent 44%) 14px 0, linear-gradient(72deg, transparent 35%, #999 43%), linear-gradient(63deg, transparent 64%, #999 60%, #999 54%, transparent 64%), #444;
   background-size: 17px 18px;
 
-  width: 90%;
   min-width: 800px;
   margin: auto;
   min-height: 52px;

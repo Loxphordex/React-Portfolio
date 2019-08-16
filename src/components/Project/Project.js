@@ -68,7 +68,7 @@ export default class Project extends React.Component {
           <p>{title.toUpperCase()}</p>
         </div>
 
-        <div className={`project-info ${last}`}>
+        <div className={`project-info ${name}-info ${last}`}>
           <div className='info-background'>
             <div className={`img-container ${name}-img-container`}>
               <img src={photo} alt={name} className={`${name}-image main-image`} />
