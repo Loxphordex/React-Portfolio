@@ -8,10 +8,19 @@
 }
 
 /* MIMOOD */
+.miMood-info,
+.miMood-info a {
+  background-color: rgb(193, 193, 212);
+  color: #202027;
+}
+
 .miMood-image {
-  width: 210px;
-  margin-right: 48px;
-  right: 0;
+  border-radius: 50%;
+  border: 1px solid #202027;
+}
+
+.miMood-gallery img {
+  border: 1px solid #202027;
 }
 
 

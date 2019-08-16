@@ -1,6 +1,7 @@
 .projects-container {
   min-height: 490px;
-  width: 1000px;
+  width: 90%;
+  min-width: 800px;
   margin: auto;
 
   background: 
@@ -9,7 +10,7 @@
     linear-gradient(315deg, rgb(19, 19, 22),  25%, transparent 25%),
     linear-gradient(45deg, rgb(19, 19, 22), 25%, transparent 25%);	
   background-size: 2em 2em;
-  background-color: rgb(24, 24, 27);;
+  background-color: rgb(24, 24, 27);
 
     -webkit-animation: fadein 0.2s; /* Safari, Chrome and Opera > 12.1 */
        -moz-animation: fadein 0.2s; /* Firefox < 16 */
@@ -20,7 +21,6 @@
 
 .projects-overview {
   background-color: rgb(19, 19, 22);
-  max-width: 1000px;
   margin: 0 auto;
   min-height: 240px;
   text-align: left;
@@ -44,13 +44,12 @@
 }
 
 .pro-dec-1 {
-  position: absolute;
   opacity: 0.6;
 
   background: linear-gradient(59deg, #999 40%, transparent 44%) 14px 0, linear-gradient(72deg, transparent 35%, #999 43%), linear-gradient(63deg, transparent 64%, #999 60%, #999 54%, transparent 64%), #444;
   background-size: 17px 18px;
 
-  min-width: 998px;
+  min-width: 800px;
   margin: auto;
   min-height: 52px;
 }
@@ -58,7 +57,6 @@
 .projects-list {
   margin: auto;
   margin-bottom: 60px;
-  max-width: 1000px;
   position: relative;
 }
 

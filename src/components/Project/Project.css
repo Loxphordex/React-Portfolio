@@ -1,17 +1,7 @@
 .main-image {
-  /* width: 180px; */
-  float: left;
-  /* margin: 52px; */
-  margin-top: 100px;
-  margin-left: 18px;
-  position: relative;
-  /* bottom: 44px; */
-  /* right: 44px; */
-
-  width: 260px;
-  margin: 0;
-  right: 22px;
-  bottom: -48px
+  width: 150px;
+  margin: auto;
+  box-shadow: 0 4px 8px rgba(15, 15, 15, 0.63);
 }
 
 .vl3 {
@@ -28,38 +18,16 @@
   width: 148px;
   border-radius: 7px;
   position: relative;
-  right: -23px;
-  margin-top: 15px;
 }
 
 .info-container h2 {
-  display: block;
+  display: inline-block;
   font-size: 42px;
   margin: 0;
 }
 
-/* .miMood-purple {
-  color: #8884d8;
-} */
-
-.project-links {
-  display: inline-block;
-  width: 100px;
-  bottom: 85px;
-  left: 60px;
-  z-index: 50;
-}
-
-.project-links a {
-  margin-bottom: 10px
-}
-
 .tech {
   top: 192px;
-}
-
-.p-container {
-  left: 98px;
 }
 
 .mv2 {
@@ -68,17 +36,20 @@
   bottom: 74px;
 }
 
+.tech-area {
+  grid-column: 4/5;
+  grid-row: 1/2;
+  margin: auto;
+  width: 200px;
+  font-size: 32px;
+}
+
+.tech-area i {
+  margin: 4%;
+  display: inline-block;
+}
+
 @media only screen and (max-width: 760px) {
-  .project-links {
-    left: 0;
-  }
-  .project-links {
-    left: 0;
-    bottom: 0;
-    top: 200px;
-    float: left;
-    width: 100%;
-  }
   .tech {
     top: 26px;
   }
@@ -113,9 +84,6 @@
   }
   .info-container {
     bottom: 60px;
-  }
-  .project-links {
-    top: 222px;
   }
   .p-container {
     left: 0px;

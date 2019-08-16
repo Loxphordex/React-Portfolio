@@ -8,30 +8,53 @@ import './ProjectDetails.css'
 
 // IMAGES
 import quoterLabel from '../../images/quoter-label.png'
-import quoterMobile from '../../images/quoter-mobile.png'
 import happy from '../../images/happy.png'
-import newEntry from '../../images/miMood-newEntry.png'
 import bookmarksWide from '../../images/bookmarks-wide.png'
-import bookmarksMobile from '../../images/bookmarks-mobile.png'
 import mollyWide from '../../images/molly-desktop.png'
-import mollyMobile from '../../images/molly-mobile.png'
 
+// COMPONENTS
 import Project from '../../components/Project/Project'
+import icons from '../../components/IconClasses/IconClasses'
+import galleryImages from '../../components/GalleryImages/GalleryImages'
 
 export default class Projects extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
-      currentView: ''
+      currentView: '',
+      images: {},
+      iconClasses: {},
     }
+  }
+
+  componentDidMount() {
+    this.generateImages()
   }
 
   setCurrentView = (name) => {
     this.setState({ currentView: name })
   }
 
+  generateImages = () => {
+    this.setState({
+      images: {
+        molly: galleryImages.molly,
+        quoter: galleryImages.quoter,
+        miMood: galleryImages.miMood,
+        bookmarks: galleryImages.bookmarks,
+      },
+
+      iconClasses: {
+        molly: icons.molly,
+        quoter: icons.quoter,
+        miMood: icons.miMood,
+        bookmarks: icons.bookmarks,
+      }
+    })
+  }
+
   render() {
-    const { currentView } = this.state
+    const { currentView, images, iconClasses } = this.state
     return (
         <div className='projects-container'>
         
@@ -42,14 +65,31 @@ export default class Projects extends React.Component {
   
           <div className='projects-list'>
 
-            <Project 
+          <Project 
               first={true}
+              name='molly'
+              title='Art by Molly Reusser'
+              photo={mollyWide}
+              images={images.molly}
+              icons={iconClasses.molly}
+              liveLink='https://mollyreusser.com/'
+              repoLink='https://github.com/Loxphordex/molly-website'
+              paragraph1='An art portfolio for Seattle all-arounder Molly Reusser,
+                who also designed the site. Several mediums are organized and displayed including illustration, 
+                sculpture, and animation.'
+              paragraph2='Molly can customize the photos on her site using a secret authorization system.'
+              last=''
+              setCurrentView={this.setCurrentView}
+              currentView={currentView}
+            />
+
+            <Project 
+              first={false}
               name='quoter'
               title='Quoter'
               photo={quoterLabel}
-              mobilePhoto={quoterMobile}
-              frontEnd='JavaScript, React'
-              backEnd='Express, PostgreSQL'
+              images={images.quoter}
+              icons={iconClasses.quoter}
               liveLink='https://loxphordex-quoter-client.now.sh/'
               repoLink='https://github.com/Loxphordex/silas-capstone-client'
               paragraph1='A journal app that scans what you write, 
@@ -65,9 +105,8 @@ export default class Projects extends React.Component {
               name='miMood'
               title='miMood'
               photo={happy}
-              mobilePhoto={newEntry}
-              frontEnd='JavaScript, React, Recharts'
-              backEnd='Express, PostgreSQL'
+              images={images.miMood}
+              icons={iconClasses.miMood}
               liveLink='https://alt-states-mimood.now.sh/'
               repoLink='https://github.com/thinkful-ei-bee/Altered-States-Capstone'
               paragraph1='Track your emotions using AI. 
@@ -82,31 +121,11 @@ export default class Projects extends React.Component {
 
             <Project 
               first={false}
-              name='molly'
-              title='Art by Molly Reusser'
-              photo={mollyWide}
-              mobilePhoto={mollyMobile}
-              frontEnd='JavaScript, React, Cloudinary API'
-              backEnd='Express, PostgreSQL'
-              liveLink='https://mollyreusser.com/'
-              repoLink='https://github.com/Loxphordex/molly-website'
-              paragraph1='An art portfolio for Seattle all-arounder Molly Reusser,
-                who also designed the site. Several mediums are organized and displayed including illustration, 
-                sculpture, and animation.'
-              paragraph2='Molly can customize the photos on her site using a secret authorization system.'
-              last=''
-              setCurrentView={this.setCurrentView}
-              currentView={currentView}
-            />
-
-            <Project 
-              first={false}
               name='bookmarks'
               title='Bookmarks'
               photo={bookmarksWide}
-              mobilePhoto={bookmarksMobile}
-              frontEnd='JavaScript, jQuery'
-              backEnd=''
+              images={images.bookmarks}
+              icons={iconClasses.bookmarks}
               liveLink='https://loxphordex.github.io/Bookmarks/'
               repoLink='https://github.com/Loxphordex/Bookmarks'
               paragraph1='This was the first Javascript project I worked on. 
