@@ -139,56 +139,31 @@
   margin-top: 38px;
 }
 
-@media only screen and (max-width: 760px) {
-  .info-container {
-    margin: auto;
-    width: 99%;
-    right: 0;
-  }
+@media only screen and (max-width: 768px) {
   .project-info {
-    border-right: none;
-    border-left: none;
+    min-width: initial;
+  }
+  .project-info .info-background {
+    display: block;
   }
   .expanded .project-info {
-    max-height: 300px;
+    max-height: max-content;
   }
-  .info-background {
-    min-height: 0px;
+  .info-container {
+    padding: 0 4%;
   }
-  .p-container {
+  .info-container h2 {
+    text-align: center;
+    display: block !important;
+  }
+  .links-area {
+    display: block;
+    width: 100%;
     margin: auto;
-    left: 0;
-  }
-  .project-links {
+    margin-top: 3%;
     text-align: center;
   }
-  .img-container {
-    display: none;
-  }
-}
-
-@media only screen and (max-width: 375px) {
-  .project-links {
-    width: 300px;
-    margin: auto;
-  }
-  .project-links a {
-    min-height: 34px;
-    padding-top: 20px;
-  }
-  .project-links a, .project-links button {
-    font-size: 12px;
-    width: 70px;
-  }
-  .tech {
-    top: 18px;
-  }
-  .tech-info {
-    width: 69px;
-  }
-  .p-container {
-    left: 5px;
-    font-size: 14px;
-    width: 90%;
+  .links-area a {
+    margin: 2%;
   }
 }

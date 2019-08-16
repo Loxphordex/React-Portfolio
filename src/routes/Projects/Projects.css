@@ -106,34 +106,24 @@
   display: inline-block;
 }
 
-
-
-
-@media only screen and (max-width: 760px) {
+@media only screen and (max-width: 768px) {
   .projects-container {
     width: 100%;
-    position: relative;
-  }
-  .projects-overview {
-    max-width: 768px;
-    width: 100%;
-    margin: 0;
-    min-height: 122px;
-    border-right: none;
-    border-left: none;
-    text-align: center;
-  }
-  .projects-overview h2 {
-    font-size: 53px;
-    top: 18px;
-    margin: 0;
+    min-width: initial;
   }
   .pro-dec-1 {
-    min-width: 0px;
+    min-width: initial;
     width: 100%;
+    display: block;
   }
-  .project {
-    border-right: none;
-    border-left: none;
+  .projects-overview {
+    min-height: initial;
+  }
+  .projects-overview h2 {
+    font-size: 3.5em;
+    position: static;
+    margin: auto;
+    text-align: center;
+    display: block;
   }
 }

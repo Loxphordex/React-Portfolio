@@ -11,17 +11,17 @@ export default class About extends React.Component {
 
         <img className='about-portrait' src={portrait} alt='Silas Hallahan' />
 
+        <div className='contact-links'>
+          <a href='mailto:silasishallahan@gmail.com'><i className='far fa-envelope'></i></a>
+          <a href='https://github.com/Loxphordex' target='_blank' rel='noopener noreferrer'><i className='fab fa-github-square'></i></a>
+          <a href='https://www.linkedin.com/in/silashallahan/' target='_blank' rel='noopener noreferrer'><i className='fab fa-linkedin'></i></a>
+        </div>
+
         <div className='about-info'>
           <p>I'm in Seattle, WA. My passion for building and creativity comes from watching something grow out of nothing.</p>
           <p>I believe coding is a creative medium. I love to make things both functional and beautiful.</p>
           <p>In my childhood I spent my days building lego sets, or writing, or drawing.</p>
           <p>These things all lend themselves to coding; whether it's assembling a project bit by bit, conceptualizing app structure, or following instruction to a tee.</p>
-        </div>
-
-        <div className='contact-links'>
-          <a href='mailto:silasishallahan@gmail.com'><i className='far fa-envelope'></i></a>
-          <a href='https://github.com/Loxphordex' target='_blank' rel='noopener noreferrer'><i className='fab fa-github-square'></i></a>
-          <a href='https://www.linkedin.com/in/silashallahan/' target='_blank' rel='noopener noreferrer'><i className='fab fa-linkedin'></i></a>
         </div>
 
         <div className='hl-container'>
