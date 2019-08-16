@@ -22,6 +22,9 @@
 }
 
 @media only screen and (max-width: 768px) {
+  .gallery-area {
+    margin-top: 4%;
+  }
   .gallery-area img {
     max-width: 300px;
   }
