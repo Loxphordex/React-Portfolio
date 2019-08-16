@@ -10,6 +10,7 @@ import mollyMobile from '../../images/molly-mobile.png'
 import mollyMobile2 from '../../images/molly-mobile-2.png'
 import mollyCategories from '../../images/molly-categories.png'
 import mollyFS from '../../images/molly-fs.png'
+import mollySlug from '../../images/molly-slug.png'
 import bookmarksWide from '../../images/bookmarks-wide.png'
 import bookmarksMobile from '../../images/bookmarks-mobile.png'
 
@@ -19,6 +20,7 @@ export default {
     mollyMobile2,
     mollyFS,
     mollyWide,
+    mollySlug,
     mollyCategories,
   ],
   quoter: [

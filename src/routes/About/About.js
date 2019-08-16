@@ -24,6 +24,10 @@ export default class About extends React.Component {
           <a href='https://www.linkedin.com/in/silashallahan/' target='_blank' rel='noopener noreferrer'><i className='fab fa-linkedin'></i></a>
         </div>
 
+        <div className='hl-container'>
+          <div className='hl' />
+        </div>
+
         <div className='about-skills'>
           <div className='skills-section skills-front-end'>
             <h2>Front End</h2>
