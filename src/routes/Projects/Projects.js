@@ -33,12 +33,6 @@ export default class Projects extends React.Component {
 
   setCurrentView = (name) => {
     this.setState({ currentView: name })
-    // if (window.innerWidth <= 768) {
-    //   setTimeout(() => {
-    //     const toTop = document.getElementById('projects-list')
-    //     toTop.scrollIntoView({ behavior: 'smooth' })
-    //   }, 240)
-    // }
   }
 
   generateImages = () => {
