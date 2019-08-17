@@ -142,6 +142,8 @@
 @media only screen and (max-width: 768px) {
   .project-info {
     min-width: initial;
+    transition-duration: 0s;
+    transition-timing-function: unset;
   }
   .project-info .info-background {
     display: block;
