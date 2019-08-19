@@ -5,8 +5,54 @@ import About from './routes/About/About'
 import Projects from './routes/Projects/Projects'
 import './App.css';
 
+// IMAGES
+import portraitImage from './images/sibw.jpg'
+
+// COMPONENTS
+import icons from './components/IconClasses/IconClasses'
+import galleryImages from './components/GalleryImages/GalleryImages'
+
 class App extends React.Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+      currentView: '',
+      images: {},
+      iconClasses: {},
+      portrait: null,
+    }
+  }
+
+  componentDidMount() {
+    this.generateImages()
+  }
+
+  setCurrentView = (name) => {
+    this.setState({ currentView: name })
+  }
+
+  generateImages = () => {
+    this.setState({
+      images: {
+        molly: galleryImages.molly,
+        quoter: galleryImages.quoter,
+        miMood: galleryImages.miMood,
+        bookmarks: galleryImages.bookmarks,
+      },
+
+      iconClasses: {
+        molly: icons.molly,
+        quoter: icons.quoter,
+        miMood: icons.miMood,
+        bookmarks: icons.bookmarks,
+      },
+
+      portrait: portraitImage,
+    })
+  }
+
   render() {
+    const { currentView, images, iconClasses, portrait, } = this.state
     return (
       <div className="App">
   
@@ -19,8 +65,15 @@ class App extends React.Component {
   
           <Switch>
   
-            <Route path='/about'><About /></Route>
-            <Route path='/projects'><Projects /></Route>
+            <Route path='/about' render={() => <About
+              portrait={portrait}
+            />} />
+            <Route path='/projects' render={() => <Projects
+              currentView={currentView}
+              setCurrentView={this.setCurrentView}
+              images={images}
+              iconClasses={iconClasses}
+            />} />
   
           </Switch>
         </Route>
