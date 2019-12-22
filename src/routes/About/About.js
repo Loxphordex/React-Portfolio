@@ -8,8 +8,6 @@ export default class About extends React.Component {
     return (
       <div className='about-me-container'>
 
-        {}
-
         <img className='about-portrait' src={portrait} alt='Silas Hallahan' />
 
         <div className='contact-links'>
@@ -44,6 +42,11 @@ export default class About extends React.Component {
               </li>
 
               <li>
+                <i class="devicon-typescript-plain"></i>
+                <p>TypeScript</p>
+              </li>
+
+              <li>
                 <i className='devicon-html5-plain'></i>
                 <p>HTML5</p>
               </li>
@@ -51,6 +54,11 @@ export default class About extends React.Component {
               <li>
                 <i className='devicon-css3-plain'></i>
                 <p>CSS3</p>
+              </li>
+
+              <li>
+                <i class="devicon-d3js-plain"></i>
+                <p>D3</p>
               </li>
 
               <li>
@@ -63,6 +71,11 @@ export default class About extends React.Component {
           <div className='skills-section skills-back-end'>
             <h2>Back End</h2>
             <ul>
+              <li>
+                <i class="devicon-csharp-plain"></i>
+                <p>C#</p>
+              </li>
+
               <li>
                 <i className='devicon-express-original'></i>
                 <p>ExpressJS</p>
@@ -96,6 +109,16 @@ export default class About extends React.Component {
               <li>
                 <i className='devicon-heroku-original'></i>
                 <p>Heroku</p>
+              </li>
+
+              <li>
+                <i class="devicon-git-plain"></i>
+                <p>Git</p>
+              </li>
+
+              <li>
+                <i class="devicon-visualstudio-plain"></i>
+                <p>Visual Studio</p>
               </li>
             </ul>
           </div>
