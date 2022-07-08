@@ -126,4 +126,7 @@
     text-align: center;
     display: block;
   }
+  .project {
+    transition: 0s;
+  }
 }

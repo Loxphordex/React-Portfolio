@@ -14,53 +14,10 @@ import mollyWide from '../../images/molly-desktop.png'
 
 // COMPONENTS
 import Project from '../../components/Project/Project'
-import icons from '../../components/IconClasses/IconClasses'
-import galleryImages from '../../components/GalleryImages/GalleryImages'
 
 export default class Projects extends React.Component {
-  constructor(props) {
-    super(props)
-    this.state = {
-      currentView: '',
-      images: {},
-      iconClasses: {}
-    }
-  }
-
-  componentDidMount() {
-    this.generateImages()
-  }
-
-  setCurrentView = (name) => {
-    this.setState({ currentView: name })
-    // if (window.innerWidth <= 768) {
-    //   setTimeout(() => {
-    //     const toTop = document.getElementById('projects-list')
-    //     toTop.scrollIntoView({ behavior: 'smooth' })
-    //   }, 240)
-    // }
-  }
-
-  generateImages = () => {
-    this.setState({
-      images: {
-        molly: galleryImages.molly,
-        quoter: galleryImages.quoter,
-        miMood: galleryImages.miMood,
-        bookmarks: galleryImages.bookmarks,
-      },
-
-      iconClasses: {
-        molly: icons.molly,
-        quoter: icons.quoter,
-        miMood: icons.miMood,
-        bookmarks: icons.bookmarks,
-      }
-    })
-  }
-
   render() {
-    const { currentView, images, iconClasses } = this.state
+    const { currentView, setCurrentView, images, iconClasses } = this.props
     return (
         <div className='projects-container'>
         
@@ -74,18 +31,18 @@ export default class Projects extends React.Component {
           <Project 
               first={true}
               name='molly'
-              title='Art by Molly Reusser'
+              title='Art Portfolio'
               photo={mollyWide}
               images={images.molly}
               icons={iconClasses.molly}
-              liveLink='https://mollyreusser.com/'
+              liveLink='https://molly-website.vercel.app/'
               repoLink='https://github.com/Loxphordex/molly-website'
-              paragraph1='An art portfolio for Seattle all-arounder Molly Reusser,
+              paragraph1='A portfolio for Seattle all-arounder Molly Reusser,
                 who also designed the site. Several mediums are organized and displayed including illustration, 
                 sculpture, and animation.'
               paragraph2='Molly can customize the photos on her site using a secret authorization system.'
               last=''
-              setCurrentView={this.setCurrentView}
+              setCurrentView={setCurrentView}
               currentView={currentView}
             />
 
@@ -102,7 +59,7 @@ export default class Projects extends React.Component {
                 and returns relevant quotes to spark inspiration.'
               paragraph2='Discover new authors as well as new perspectives.'
               last=''
-              setCurrentView={this.setCurrentView}
+              setCurrentView={setCurrentView}
               currentView={currentView}
             />
 
@@ -121,7 +78,7 @@ export default class Projects extends React.Component {
               paragraph2='This allows for a deeper understanding of both your own mood, 
                 and of how AI interacts with human emotion.'
               last=''
-              setCurrentView={this.setCurrentView}
+              setCurrentView={setCurrentView}
               currentView={currentView}
             />
 
@@ -140,7 +97,7 @@ export default class Projects extends React.Component {
               paragraph2='The app simply keeps a record of your bookmarks, 
                 and lets you filter them by rating.'
               last='last'
-              setCurrentView={this.setCurrentView}
+              setCurrentView={setCurrentView}
               currentView={currentView}
             />
           </div>
