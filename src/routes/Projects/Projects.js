@@ -23,7 +23,7 @@ export default class Projects extends React.Component {
     this.state = {
       currentView: '',
       images: {},
-      iconClasses: {},
+      iconClasses: {}
     }
   }
 
