@@ -31,13 +31,13 @@ export default class Projects extends React.Component {
           <Project 
               first={true}
               name='molly'
-              title='Art by Molly Reusser'
+              title='Art Portfolio'
               photo={mollyWide}
               images={images.molly}
               icons={iconClasses.molly}
-              liveLink='https://mollyreusser.com/'
+              liveLink='https://molly-website.vercel.app/'
               repoLink='https://github.com/Loxphordex/molly-website'
-              paragraph1='An art portfolio for Seattle all-arounder Molly Reusser,
+              paragraph1='A portfolio for Seattle all-arounder Molly Reusser,
                 who also designed the site. Several mediums are organized and displayed including illustration, 
                 sculpture, and animation.'
               paragraph2='Molly can customize the photos on her site using a secret authorization system.'
