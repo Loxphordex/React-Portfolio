@@ -13,6 +13,12 @@ import mollyFS from '../../images/molly-fs.png'
 import mollySlug from '../../images/molly-slug.png'
 import bookmarksWide from '../../images/bookmarks-wide.png'
 import bookmarksMobile from '../../images/bookmarks-mobile.png'
+import pearegrineDesktop1 from '../../images/pearegrine_desktop_1.png'
+import pearegrineMobile1 from '../../images/pearegrine_mobile_1.png'
+import pearegrineMobile2 from '../../images/pearegrine_mobile_2.png'
+import pearegrineGrayBlockTee from '../../images/pearegrine-gray-block-tee.jpg'
+import pearegrinePear from '../../images/pearegrine-Pear.png'
+import pearegrineLogo from '../../images/pearegrine-pearegrineLogo.png'
 
 export default {
   molly: [
@@ -37,5 +43,13 @@ export default {
   bookmarks: [
     bookmarksMobile,
     bookmarksWide,
-  ]
+  ],
+  pearegrine: [
+    pearegrineDesktop1,
+    pearegrineMobile1,
+    pearegrineMobile2,
+    pearegrineGrayBlockTee,
+    pearegrinePear,
+    pearegrineLogo,
+  ],
 }

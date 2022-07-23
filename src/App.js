@@ -38,6 +38,7 @@ class App extends React.Component {
         quoter: galleryImages.quoter,
         miMood: galleryImages.miMood,
         bookmarks: galleryImages.bookmarks,
+        pearegrine: galleryImages.pearegrine
       },
 
       iconClasses: {
@@ -45,6 +46,7 @@ class App extends React.Component {
         quoter: icons.quoter,
         miMood: icons.miMood,
         bookmarks: icons.bookmarks,
+        pearegrine: icons.pearegrine
       },
 
       portrait: portraitImage,

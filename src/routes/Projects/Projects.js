@@ -11,6 +11,7 @@ import quoterLabel from '../../images/quoter-label.png'
 import happy from '../../images/happy.png'
 import bookmarksWide from '../../images/bookmarks-wide.png'
 import mollyWide from '../../images/molly-desktop.png'
+import pearegrinePear from '../../images/pearegrine-Pear.png'
 
 // COMPONENTS
 import Project from '../../components/Project/Project'
@@ -28,8 +29,24 @@ export default class Projects extends React.Component {
   
           <div className='projects-list' id='projects-list'>
 
+          <Project
+            first={true}
+            name='pearegrine'
+            title='Pearegrine Clothing'
+            photo={pearegrinePear}
+            images={images.pearegrine}
+            icons={iconClasses.pearegrine}
+            liveLink='https://pearegrine.com'
+            repoLink='https://github.com/Loxphordex/k-client'
+            paragraph1='A t-shirt company'
+            paragraph2='testing testing'
+            last=''
+            setCurrentView={setCurrentView}
+            currentView={currentView}
+          />
+
           <Project 
-              first={true}
+              first={false}
               name='molly'
               title='Art Portfolio'
               photo={mollyWide}
@@ -63,7 +80,7 @@ export default class Projects extends React.Component {
               currentView={currentView}
             />
 
-            <Project 
+            {/* <Project 
               first={false}
               name='miMood'
               title='miMood'
@@ -80,9 +97,9 @@ export default class Projects extends React.Component {
               last=''
               setCurrentView={setCurrentView}
               currentView={currentView}
-            />
+            /> */}
 
-            <Project 
+            {/* <Project 
               first={false}
               name='bookmarks'
               title='Bookmarks'
@@ -99,7 +116,7 @@ export default class Projects extends React.Component {
               last='last'
               setCurrentView={setCurrentView}
               currentView={currentView}
-            />
+            /> */}
           </div>
         </div>
     ) 
