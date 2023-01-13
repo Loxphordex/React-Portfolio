@@ -38,7 +38,8 @@ class App extends React.Component {
         quoter: galleryImages.quoter,
         miMood: galleryImages.miMood,
         bookmarks: galleryImages.bookmarks,
-        pearegrine: galleryImages.pearegrine
+        pearegrine: galleryImages.pearegrine,
+        memoryField: galleryImages.memoryField
       },
 
       iconClasses: {

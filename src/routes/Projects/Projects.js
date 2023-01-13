@@ -29,24 +29,40 @@ export default class Projects extends React.Component {
   
           <div className='projects-list' id='projects-list'>
 
-
         <Project 
-            first={true}
-            name='molly'
-            title='Art Portfolio'
-            photo={mollyWide}
-            images={images.molly}
-            icons={iconClasses.molly}
-            liveLink='https://molly-website.vercel.app/'
-            repoLink='https://github.com/Loxphordex/molly-website'
-            paragraph1='A portfolio for Seattle all-arounder Molly Reusser,
-              who also designed the site. Several mediums are organized and displayed including illustration, 
-              sculpture, and animation.'
-            paragraph2='Molly can customize the photos on her site using a secret authorization system.'
-            last=''
-            setCurrentView={setCurrentView}
-            currentView={currentView}
-          />
+          first={true}
+          name='molly'
+          title='Art Portfolio'
+          photo={mollyWide}
+          images={images.molly}
+          icons={iconClasses.molly}
+          liveLink='https://molly-website.vercel.app/'
+          repoLink='https://github.com/Loxphordex/molly-website'
+          paragraph1='A portfolio for Seattle all-arounder Molly Reusser,
+            who also designed the site. Several mediums are organized and displayed including illustration, 
+            sculpture, and animation.'
+          paragraph2='Molly can customize the photos on her site using a secret authorization system.'
+          last=''
+          setCurrentView={setCurrentView}
+          currentView={currentView}
+        />
+
+        <Project
+          first={false}
+          name='memoryfield'
+          title='MemoryField'
+          photo={''}
+          images={images.memoryField}
+          liveLink='https://memoryfield.vercel.app/'
+          repoLink='https://github.com/Loxphordex/Memoryfield'
+          paragraph1='...'
+          paragraph2='...'
+          last=''
+          setCurrentView={setCurrentView}
+          currentView={currentView}
+        />
+
+
 
           <Project
             first={false}
@@ -76,7 +92,7 @@ export default class Projects extends React.Component {
               paragraph1='A journal app that scans what you write, 
                 and returns relevant quotes to spark inspiration.'
               paragraph2='Discover new authors as well as new perspectives.'
-              last=''
+              last='last'
               setCurrentView={setCurrentView}
               currentView={currentView}
             />
