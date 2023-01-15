@@ -30,8 +30,8 @@ export default class Projects extends React.Component {
   
           <div className='projects-list' id='projects-list'>
 
-        <Project 
-          first={true}
+        {/* <Project 
+          first={false}
           name='molly'
           title='Art Portfolio'
           photo={mollyWide}
@@ -46,10 +46,10 @@ export default class Projects extends React.Component {
           last=''
           setCurrentView={setCurrentView}
           currentView={currentView}
-        />
+        /> */}
 
         <Project
-          first={false}
+          first={true}
           name='memoryfield'
           title='MemoryField'
           photo={memoryFieldIcon}
@@ -67,7 +67,7 @@ export default class Projects extends React.Component {
 
 
 
-          <Project
+          {/* <Project
             first={false}
             name='pearegrine'
             title='Pearegrine Clothing'
@@ -81,9 +81,9 @@ export default class Projects extends React.Component {
             last=''
             setCurrentView={setCurrentView}
             currentView={currentView}
-          />
+          /> */}
 
-            <Project 
+            {/* <Project 
               first={false}
               name='quoter'
               title='Quoter'
@@ -98,7 +98,7 @@ export default class Projects extends React.Component {
               last='last'
               setCurrentView={setCurrentView}
               currentView={currentView}
-            />
+            /> */}
 
             {/* <Project 
               first={false}
