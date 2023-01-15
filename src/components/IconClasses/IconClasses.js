@@ -1,4 +1,13 @@
 export default {
+  pearegrine: [
+    'devicon-javascript-plain',
+    'devicon-html5-plain',
+    'devicon-css3-plain',
+    'devicon-react-original',
+    'devicon-nodejs-plain',
+    'devicon-express-original',
+    'devicon-postgresql-plain',
+  ],
   molly: [
     'devicon-javascript-plain',
     'devicon-html5-plain',

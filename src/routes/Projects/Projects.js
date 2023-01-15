@@ -8,9 +8,11 @@ import './ProjectDetails.css'
 
 // IMAGES
 import quoterLabel from '../../images/quoter-label.png'
-import happy from '../../images/happy.png'
-import bookmarksWide from '../../images/bookmarks-wide.png'
+// import happy from '../../images/happy.png'
+// import bookmarksWide from '../../images/bookmarks-wide.png'
 import mollyWide from '../../images/molly-desktop.png'
+import pearegrinePear from '../../images/pearegrine-Pear.png'
+import memoryFieldIcon from '../../images/MemClearer.png'
 
 // COMPONENTS
 import Project from '../../components/Project/Project'
@@ -28,23 +30,58 @@ export default class Projects extends React.Component {
   
           <div className='projects-list' id='projects-list'>
 
-          <Project 
-              first={true}
-              name='molly'
-              title='Art Portfolio'
-              photo={mollyWide}
-              images={images.molly}
-              icons={iconClasses.molly}
-              liveLink='https://molly-website.vercel.app/'
-              repoLink='https://github.com/Loxphordex/molly-website'
-              paragraph1='A portfolio for Seattle all-arounder Molly Reusser,
-                who also designed the site. Several mediums are organized and displayed including illustration, 
-                sculpture, and animation.'
-              paragraph2='Molly can customize the photos on her site using a secret authorization system.'
-              last=''
-              setCurrentView={setCurrentView}
-              currentView={currentView}
-            />
+        <Project 
+          first={true}
+          name='molly'
+          title='Art Portfolio'
+          photo={mollyWide}
+          images={images.molly}
+          icons={iconClasses.molly}
+          liveLink='https://molly-website.vercel.app/'
+          repoLink='https://github.com/Loxphordex/molly-website'
+          paragraph1='A portfolio for Seattle all-arounder Molly Reusser,
+            who also designed the site. Several mediums are organized and displayed including illustration, 
+            sculpture, and animation.'
+          paragraph2='Molly can customize the photos on her site using a secret authorization system.'
+          last=''
+          setCurrentView={setCurrentView}
+          currentView={currentView}
+        />
+
+        <Project
+          first={false}
+          name='memoryfield'
+          title='MemoryField'
+          photo={memoryFieldIcon}
+          images={images.memoryField}
+          liveLink='https://memoryfield.vercel.app/'
+          repoLink='https://github.com/Loxphordex/Memoryfield'
+          paragraph1='A drum machine created using React and the Javascript Web Audio API. 
+            Controls include tempo, filter, and pitch. Sequence length can be set between eight 
+            and sixteen steps, and preset functionality is included.'
+          paragraph2='All drum samples were custom-created in Ableton Live.'
+          last=''
+          setCurrentView={setCurrentView}
+          currentView={currentView}
+        />
+
+
+
+          <Project
+            first={false}
+            name='pearegrine'
+            title='Pearegrine Clothing'
+            photo={pearegrinePear}
+            images={images.pearegrine}
+            icons={iconClasses.pearegrine}
+            liveLink='https://pearegrine.com'
+            repoLink='https://github.com/Loxphordex/k-client'
+            paragraph1='A t-shirt company'
+            paragraph2='testing testing'
+            last=''
+            setCurrentView={setCurrentView}
+            currentView={currentView}
+          />
 
             <Project 
               first={false}
@@ -58,12 +95,12 @@ export default class Projects extends React.Component {
               paragraph1='A journal app that scans what you write, 
                 and returns relevant quotes to spark inspiration.'
               paragraph2='Discover new authors as well as new perspectives.'
-              last=''
+              last='last'
               setCurrentView={setCurrentView}
               currentView={currentView}
             />
 
-            <Project 
+            {/* <Project 
               first={false}
               name='miMood'
               title='miMood'
@@ -80,9 +117,9 @@ export default class Projects extends React.Component {
               last=''
               setCurrentView={setCurrentView}
               currentView={currentView}
-            />
+            /> */}
 
-            <Project 
+            {/* <Project 
               first={false}
               name='bookmarks'
               title='Bookmarks'
@@ -99,7 +136,7 @@ export default class Projects extends React.Component {
               last='last'
               setCurrentView={setCurrentView}
               currentView={currentView}
-            />
+            /> */}
           </div>
         </div>
     ) 
