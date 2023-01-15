@@ -19,7 +19,9 @@ import pearegrineMobile2 from '../../images/pearegrine_mobile_2.png'
 import pearegrineGrayBlockTee from '../../images/pearegrine-gray-block-tee.jpg'
 import pearegrinePear from '../../images/pearegrine-Pear.png'
 import pearegrineLogo from '../../images/pearegrine-pearegrineLogo.png'
-import memoryfieldPortfolioPic1 from '../../images/MemoryfieldPortfolioPic1.jpg'
+// import memoryfieldPortfolioPic1 from '../../images/MemoryfieldPortfolioPic1.jpg'
+// import MemFieldControlPanel from '../../images/MemFieldControlPanel.jpg'
+import MemFieldGif from '../../images/MemFieldGif.gif'
 
 export default {
   molly: [
@@ -54,6 +56,6 @@ export default {
     pearegrineLogo,
   ],
   memoryField: [
-    memoryfieldPortfolioPic1
+    MemFieldGif
   ]
 }

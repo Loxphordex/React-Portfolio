@@ -8,10 +8,11 @@ import './ProjectDetails.css'
 
 // IMAGES
 import quoterLabel from '../../images/quoter-label.png'
-import happy from '../../images/happy.png'
-import bookmarksWide from '../../images/bookmarks-wide.png'
+// import happy from '../../images/happy.png'
+// import bookmarksWide from '../../images/bookmarks-wide.png'
 import mollyWide from '../../images/molly-desktop.png'
 import pearegrinePear from '../../images/pearegrine-Pear.png'
+import memoryFieldIcon from '../../images/MemClearer.png'
 
 // COMPONENTS
 import Project from '../../components/Project/Project'
@@ -51,12 +52,14 @@ export default class Projects extends React.Component {
           first={false}
           name='memoryfield'
           title='MemoryField'
-          photo={''}
+          photo={memoryFieldIcon}
           images={images.memoryField}
           liveLink='https://memoryfield.vercel.app/'
           repoLink='https://github.com/Loxphordex/Memoryfield'
-          paragraph1='...'
-          paragraph2='...'
+          paragraph1='A drum machine created using React and the Javascript Web Audio API. 
+            Controls include tempo, filter, and pitch. Sequence length can be set between eight 
+            and sixteen steps, and preset functionality is included.'
+          paragraph2='All drum samples were custom-created in Ableton Live.'
           last=''
           setCurrentView={setCurrentView}
           currentView={currentView}
