@@ -21,6 +21,8 @@ import pearegrinePear from '../../images/pearegrine-Pear.png'
 import pearegrineLogo from '../../images/pearegrine-pearegrineLogo.png'
 import MemFieldGif from '../../images/MemFieldGif.gif'
 import MemMobile2 from '../../images/MemMobile2.jpg'
+import MemDayMode from '../../images/MemDayMode.jpg'
+import MemDayMobile from '../../images/MemDayMobile.jpg'
 
 export default {
   molly: [
@@ -56,6 +58,8 @@ export default {
   ],
   memoryField: [
     MemFieldGif,
-    MemMobile2
+    MemMobile2,
+    MemDayMode,
+    MemDayMobile
   ]
 }
