@@ -50,6 +50,7 @@ export default class Projects extends React.Component {
 
         <Project
           first={true}
+          boxShadow={true}
           name='memoryfield'
           title='MemoryField'
           photo={memoryFieldIcon}
@@ -67,8 +68,7 @@ export default class Projects extends React.Component {
 
 
 
-          {/* <Project
-            first={false}
+          <Project
             name='pearegrine'
             title='Pearegrine Clothing'
             photo={pearegrinePear}
@@ -76,12 +76,12 @@ export default class Projects extends React.Component {
             icons={iconClasses.pearegrine}
             liveLink='https://pearegrine.com'
             repoLink='https://github.com/Loxphordex/k-client'
-            paragraph1='A t-shirt company'
-            paragraph2='testing testing'
+            paragraph1='A clothing company / art experiment. The shirt designs and brands were designed from a friend in New York City.'
+            paragraph2='Administrators are able to upload and edit clothing entries, and submit essays under the "discover" tab. The lack of content and merchandise is beyond my control.'
             last=''
             setCurrentView={setCurrentView}
             currentView={currentView}
-          /> */}
+          />
 
             {/* <Project 
               first={false}

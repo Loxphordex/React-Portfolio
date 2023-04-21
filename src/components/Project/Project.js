@@ -6,7 +6,7 @@ export default class Project extends React.Component {
     view: 'collapsed',
     last: this.props.last,
     projectName: this.props.name,
-    currentView: this.props.currentView,
+    currentView: this.props.currentView
   }
 
   componentDidMount = () => {
@@ -58,6 +58,7 @@ export default class Project extends React.Component {
       repoLink,
       paragraph1,
       paragraph2,
+      boxShadow
     } = this.props
 
 
@@ -71,7 +72,7 @@ export default class Project extends React.Component {
         <div className={`project-info ${name}-info ${last}`}>
           <div className='info-background'>
             <div className={`img-container ${name}-img-container`}>
-              <img src={photo} alt={name} className={`${name}-image main-image`} />
+              <img src={photo} alt={name} className={`${name}-image main-image ${boxShadow ? 'main-image-box-shadow' : ''}`} />
             </div>
 
             <div className={`info-container ${name}-info`}>

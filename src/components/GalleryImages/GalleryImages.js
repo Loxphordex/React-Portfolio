@@ -52,9 +52,7 @@ export default {
     pearegrineDesktop1,
     pearegrineMobile1,
     pearegrineMobile2,
-    pearegrineGrayBlockTee,
-    pearegrinePear,
-    pearegrineLogo,
+    pearegrineGrayBlockTee
   ],
   memoryField: [
     MemFieldGif,
